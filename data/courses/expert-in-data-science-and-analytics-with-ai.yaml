@@ -1,0 +1,883 @@
+name: Expert in Data Science and Analytics with AI
+topics:
+  - name: Python for DS
+    main_topics:
+      - name: 'Day 1: Introduction to Data Science'
+        subtopics:
+          - Discussion of ETL pipeline
+          - How stored data is used for business problems
+          - 'Three types of Analytics: Descriptive, Predictive, Prescriptive'
+          - 'Descriptive: What is Data Summarization and Visualization'
+          - Tools for Data Summarization and Visualization
+          - >-
+            Predictive: Examples of predictive sales in McDonald's, predictions
+            in weather forecasting
+          - >-
+            Two major algorithms in Predictive Analytics: Machine Learning, Deep
+            Learning
+          - Math needed for Machine Learning and Deep Learning
+          - Basic example of Machine Learning, e.g., Classification, Regression
+          - 'Basic examples of Deep Learning: Image Processing, Text Processing'
+      - name: 'Day 2: Getting Started with Python'
+        subtopics:
+          - Need for a Programming language in DA and DS
+          - What is Python and why Python
+          - Vast libraries in Python
+          - Libraries for DA and DS
+          - IDEs for Python
+          - Setting up Google Colab
+          - Running simple Python commands, e.g., print(), type(), etc.
+      - name: 'Day 3: Play with Variables and Data Types in Python'
+        subtopics:
+          - Creating simple variables
+          - Rules for naming Variables
+          - 'Numeric data types: int, float, boolean, complex'
+          - 'Sequence types: Strings, Lists, Tuples'
+      - name: 'Day 4: Type Casting and Strings in Python'
+        subtopics:
+          - 'Type Casting: Converting int to float, str to int, etc.'
+          - 'Strings: String methods, indexing, slicing'
+          - Concatenation
+      - name: 'Day 5: Operators in Action – The Fundamentals of Python Expressions'
+        subtopics:
+          - 'Arithmetic Operators: +, -, /, //, %, *, **'
+          - 'Logical Operators: and, or, not'
+          - 'Assignment Operators: =, +=, -=, *=, /='
+          - 'Comparison Operators: <, >, >=, <=, ==, !='
+      - name: 'Day 6: else Making Decisions with Conditional Statements'
+        subtopics:
+          - if statement
+          - if-statement
+          - elif statement
+          - if-else examples
+          - Student Grading System
+          - Customer Discount System
+      - name: >-
+          Day 7: Harnessing Lists – Functions, Comprehension, and Data
+          Management
+        subtopics:
+          - Understanding Lists
+          - Indexing and slicing in lists
+          - >-
+            List methods: append(), extend(), insert(), remove(), pop(),
+            clear(), index(), count(), sort(), reverse()
+          - Example of adding grocery items
+      - name: 'Day 8: Lists and Tuples – Understanding Structures and Their Functions'
+        subtopics:
+          - 'Mutability: Data stored in tuples can''t be changed'
+          - 'Syntax: Lists use [], tuples use (), e.g., a = 1,2 is also a tuple'
+          - 'Memory Usage: Lists consume more space'
+          - 'Use Cases:'
+          - >-
+            Lists: Used for dynamic data that changes (e.g., appending,
+            removing)
+          - >-
+            Tuples: Used for fixed data (e.g., dictionary keys, function
+            arguments)
+          - Methods for Lists and Tuples
+      - name: 'Day 9: Looping Logic – Mastering Iteration'
+        subtopics:
+          - 'for loops: Example – Printing "Hello" 100 times'
+          - Understanding the for loop syntax
+          - 'while loops: Example – Adding 1 to x five times'
+          - Understanding the syntax of while loop
+          - break, continue, pass
+      - name: 'Day 10: Pattern Design and List Comprehension'
+        subtopics:
+          - >-
+            Pattern printing: Simple pattern, triangle, diamond, pyramid, hollow
+            square, hollow pyramid
+          - List comprehension
+          - Pattern printing with the turtle module
+      - name: 'Day 11: Dynamic and Immutable Data Structures – Sets'
+        subtopics:
+          - Understanding Sets
+          - 'Set methods: .add(), .update(), .remove()'
+      - name: 'Day 12: Mastering Dictionaries in Python'
+        subtopics:
+          - Dictionary data structure, updating dictionary
+          - 'Dictionary methods: .keys(), .values(), .items()'
+          - Extracting JSON from OpenWeather API
+      - name: 'Day 13: Navigating the Python Function Landscape'
+        subtopics:
+          - >-
+            User-defined functions: def, return, input parameters, output
+            parameters
+          - 'Example: Adding two numbers, multiplying numbers'
+          - 'Recursive functions: Example – Factorial'
+      - name: 'Day 14: Arguments and Lambda Functions in Python'
+        subtopics:
+          - 'Function arguments: *args, **kwargs'
+          - 'Lambda Functions: Example of a one-line function'
+      - name: 'Day 15: Built-in Functions and Modules in Python'
+        subtopics:
+          - >-
+            Built-in functions: abs(), print(), type(), len(), sorted(), sum(),
+            zip(), etc.
+          - 'Date and time handling: .strftime(), datetime'
+          - >-
+            Modules in Python: Discussing various modules – Chempy, Geopy,
+            Scipy, etc.
+          - 'Chempy: Printing periodic table'
+          - 'Geopy: Calculating distance between two locations'
+      - name: 'Day 16: Introduction to OOP in Python'
+        subtopics:
+          - Object-Oriented Programming (OOP) Concepts
+          - 'Classes and Objects: Creating simple objects with a class'
+          - 'Polymorphism: Same function name, different behavior example'
+      - name: 'Day 17: OOP – Inheritance, Encapsulation, and Abstraction'
+        subtopics:
+          - 'Inheritance: Parent class, child class'
+          - 'Types of Inheritance: Single, multiple, multilevel'
+          - Encapsulation
+          - 'Abstraction:'
+          - 'Example: Car as abstraction'
+          - 'Example: ATM as abstraction'
+      - name: 'Day 18: Abstraction'
+        subtopics:
+          - Understanding Abstraction in OOP
+          - Examples of Abstraction
+          - Car as an abstraction
+          - ATM as an abstraction
+      - name: 'Day 19: Regular Expressions (Regex)'
+        subtopics:
+          - Introduction to Regex
+          - 'Basic Regex Functions: search(), match(), findall(), sub(), split()'
+          - Examples of extracting data with Regex
+          - >-
+            Practical use cases: extracting phone numbers, subtitles, relevant
+            data from a document
+      - name: 'Day 20: Handling Errors and Exceptions'
+        subtopics:
+          - Understanding Errors and Exceptions
+          - Handling Errors with Try-Except
+          - Raising Exceptions in Python
+          - Using Finally for Cleanup Actions
+      - name: 'Day 21: Installation of Anaconda and Introduction to NumPy'
+        subtopics:
+          - Installing Anaconda
+          - Why use Anaconda for Data Science and Analytics
+          - Downloading and installing Anaconda (Windows, macOS, Linux)
+          - Navigating the Anaconda Navigator interface
+          - Creating and managing virtual environments in Anaconda
+          - Introduction to NumPy
+          - What is NumPy and why it is essential for numerical computing
+          - Installing NumPy (via pip or conda)
+          - Importing NumPy in Python (import numpy as np)
+          - Creating 1D and 2D arrays
+          - 'Basic array attributes: .shape, .dtype, .size, .ndim'
+          - Type conversion with .astype()
+          - Viewing data type of an array with .dtype
+          - >-
+            Simple array operations: addition, subtraction, multiplication,
+            division
+          - Accessing and slicing NumPy arrays
+          - >-
+            Creating a simple grayscale image from a NumPy array using
+            matplotlib
+      - name: 'Day 22: Creating and Slicing Arrays in NumPy'
+        subtopics:
+          - Different Ways to Create Arrays
+          - Using np.array() with Python lists or tuples
+          - Using np.zeros() and np.ones()
+          - Using np.arange() for evenly spaced values
+          - Using np.linspace() for evenly spaced values over a range
+          - Using np.eye() for identity matrices
+          - Using np.random module for random arrays (rand, randn, randint)
+          - Slicing in Arrays
+          - 'Basic slicing with : operator (rows, columns, and subarrays)'
+          - Slicing in 1D arrays
+          - Slicing in 2D arrays (row and column slicing)
+          - Using step size in slicing
+          - Negative indexing in slicing
+          - Speed, Performance, and Memory
+          - >-
+            Demonstration: NumPy array operations vs Python lists (speed
+            comparison)
+          - Memory efficiency of NumPy arrays
+          - Avoiding unnecessary array copies for better performance
+      - name: 'Day 23: Introduction to Pandas'
+        subtopics:
+          - Getting Started with Pandas
+          - What is Pandas and why it’s used in Data Analysis
+          - Installing Pandas (pip install pandas / conda install pandas)
+          - Importing Pandas (import pandas as pd)
+          - Pandas Data Structures
+          - 'Series: One-dimensional labeled array'
+          - 'DataFrame: Two-dimensional labeled data structure (rows and columns)'
+          - Creating a Series
+          - From a Python list
+          - From a NumPy array
+          - From a dictionary
+          - Creating a DataFrame
+          - From a list of dictionaries
+          - From a dictionary of lists
+          - From external files (CSV, Excel) – brief introduction
+      - name: 'Day 24: Pandas Methods, Basic Data Manipulation, and Loading CSV Files'
+        subtopics:
+          - Common Pandas Methods
+          - .head() and .tail() – viewing top/bottom rows
+          - .shape – checking rows and columns
+          - .info() – data summary and types
+          - .describe() – statistical summary
+          - .columns and .index – viewing column and index labels
+          - .dtypes – checking data types
+          - Basic Data Manipulation (EDA)
+          - Selecting columns (df['col']) and rows (.loc[], .iloc[])
+          - Filtering rows with conditions
+          - Sorting data with .sort_values()
+          - Renaming columns with .rename()
+          - Checking for missing values (.isnull(), .notnull())
+          - Dropping missing values (.dropna()) and filling them (.fillna())
+          - Loading CSV Files
+          - Reading CSV files with pd.read_csv()
+          - Specifying file path and delimiter
+          - Saving DataFrame to CSV with .to_csv()
+      - name: 'Day 25: Introduction to Matplotlib'
+        subtopics:
+          - Getting Started with Matplotlib
+          - What is Matplotlib and why it’s used for Data Visualization
+          - Installing Matplotlib (pip install matplotlib)
+          - Importing Matplotlib (import matplotlib.pyplot as plt)
+          - Basic syntax for creating a plot
+          - Types of Plots
+          - Line Plot – plotting continuous data over time or sequence
+          - Bar Plot – comparing categories
+          - Histogram – visualizing distribution of data
+          - Box Plot – detecting spread and outliers
+          - Scatter Plot – relationship between two variables
+          - Plot Customization
+          - Adding titles, axis labels, and legends
+          - Changing colors, markers, and line styles
+          - Saving plots as images (.png, .jpg)
+      - name: 'Day 26: Introduction to Seaborn'
+        subtopics:
+          - Getting Started with Seaborn
+          - What is Seaborn and why use it over Matplotlib
+          - Installing Seaborn (pip install seaborn)
+          - Importing Seaborn (import seaborn as sns)
+          - Using built-in datasets (sns.load_dataset())
+          - Types of Plots
+          - Bar Plot – sns.barplot()
+          - Line Plot – sns.lineplot()
+          - Histogram – sns.histplot()
+          - Scatter Plot – sns.scatterplot()
+          - Box Plot – sns.boxplot()
+          - >-
+            Pair Plot – sns.pairplot() to explore relationships between multiple
+            variables
+          - Customization
+          - Changing themes and styles (sns.set_theme(), sns.set_style())
+          - Adding titles and axis labels
+          - Adjusting colors and palettes
+      - name: 'Day 27: Exploratory Data Analysis (EDA) – Part 1'
+        subtopics:
+          - Introduction to EDA
+          - What is EDA and why it is important in Data Science
+          - >-
+            Goals of EDA: Understanding data structure, detecting patterns,
+            finding anomalies
+          - Loading Dataset from Kaggle
+          - Downloading datasets from Kaggle
+          - Loading dataset into Python using Pandas (pd.read_csv())
+          - Quick overview of the dataset with .head(), .info(), .describe()
+          - Basic EDA Steps
+          - Checking data types of each column
+          - Identifying missing values (.isnull().sum())
+          - Basic statistics (mean, median, mode)
+          - Understanding categorical vs numerical features
+          - >-
+            Viewing data distributions using histograms and boxplots (Matplotlib
+            / Seaborn)
+      - name: 'Day 28: Exploratory Data Analysis (EDA) – Part 2'
+        subtopics:
+          - Hands-On EDA Activity
+          - >-
+            Students will perform a complete basic EDA on a dataset (preferably
+            from Kaggle)
+          - 'Steps to be followed:'
+          - Load dataset using Pandas
+          - Display first and last few rows (.head(), .tail())
+          - Check dataset shape, data types, and summary statistics
+          - Identify and count missing values
+          - Separate categorical and numerical features
+          - Plot data distributions for numerical columns (histograms, boxplots)
+          - >-
+            Create visualizations for categorical variables (bar plots, count
+            plots)
+          - Encourage students to document observations for each step
+          - Submit EDA notebook for review
+      - name: 'Day 29: Data Cleaning'
+        subtopics:
+          - Introduction to Data Cleaning
+          - Why data cleaning is essential before analysis or modeling
+          - >-
+            Common data quality issues: missing values, duplicates, incorrect
+            formats, inconsistent categories
+          - Handling Missing Values
+          - Detecting missing values (.isnull().sum())
+          - Removing missing values (.dropna())
+          - >-
+            Filling missing values (.fillna()) with mean, median, mode, or
+            custom values
+          - Handling Duplicates
+          - Detecting duplicates (.duplicated())
+          - Removing duplicates (.drop_duplicates())
+          - Handling Inconsistent Data
+          - >-
+            Standardizing categorical values (e.g., “Male”, “male”, “M” →
+            “Male”)
+          - Stripping whitespace from strings
+          - Renaming columns for consistency
+      - name: 'Day 30: Solving Assignment on EDA'
+        subtopics:
+          - >-
+            Apply the concepts of EDA learned in Day 27 and Day 28 to solve a
+            given assignment.
+          - Assignment Structure
+          - Load the provided dataset into Pandas
+          - >-
+            Perform basic dataset inspection (.head(), .shape, .info(),
+            .describe())
+          - Identify and handle missing values
+          - Separate numerical and categorical columns
+          - 'Create visualizations:'
+          - Histograms and boxplots for numerical features
+          - Bar plots and count plots for categorical features
+          - Write short observations for each visualization
+          - Save and submit the Jupyter Notebook for evaluation
+          - Outcome
+          - >-
+            Students will gain confidence in performing end-to-end EDA
+            independently.
+  - name: Data Science Essentials
+    main_topics:
+      - name: 'Day 31: Getting Started with SQL and MySQL'
+        subtopics:
+          - What is SQL? Why do we need it in Data Science and Analytics
+          - Understanding Structured vs Unstructured Data
+          - Installing MySQL (Workbench / CLI)
+          - Creating and dropping databases
+      - name: 'Day 32: Exploring Data Definition Language (DDL)'
+        subtopics:
+          - Introduction to DDL
+          - 'DDL Commands:'
+          - CREATE – creating tables
+          - ALTER – modifying tables
+          - DROP – deleting tables
+          - TRUNCATE – removing all rows
+          - RENAME – renaming tables
+          - 'Constraints:'
+          - PRIMARY KEY
+          - FOREIGN KEY
+          - NOT NULL
+          - UNIQUE
+      - name: 'Day 33: Manipulating Data – Data Manipulation Language (DML)'
+        subtopics:
+          - Introduction to DML
+          - 'DML Commands:'
+          - INSERT – inserting data into a table
+          - UPDATE – updating data in a table
+          - DELETE – removing data
+          - SELECT basics
+          - 'Filtering records using:'
+          - WHERE clause
+          - 'Logical operators: AND, OR, NOT'
+          - IN operator
+      - name: 'Day 34: Data Transaction Language (DTL) Essentials'
+        subtopics:
+          - Introduction to DTL
+          - 'DTL Commands:'
+          - GRANT – giving permissions
+          - REVOKE – removing permissions
+          - DENY – restricting access
+          - ROLLBACK – undoing changes
+          - COMMIT – saving changes
+          - Aggregate Functions
+          - COUNT(), SUM(), AVG(), MIN(), MAX()
+          - Clauses
+          - GROUP BY – grouping records
+          - ORDER BY – sorting records
+          - HAVING – filtering aggregated results
+      - name: 'Day 35: The Art of Joining Tables in SQL'
+        subtopics:
+          - Why joins are important
+          - 'Types of Joins:'
+          - INNER JOIN
+          - LEFT JOIN
+          - RIGHT JOIN
+          - FULL OUTER JOIN
+          - CROSS JOIN
+          - Practical examples of joins across two or more tables
+      - name: 'Day 36: Connecting SQL with Python'
+        subtopics:
+          - Introduction to database connectivity in Python
+          - >-
+            Installing necessary connectors (mysql-connector-python /
+            sqlalchemy)
+          - Connecting Python to MySQL database
+          - Running SQL queries from Python (SELECT, INSERT, etc.)
+          - Fetching and displaying query results in Pandas DataFrame
+      - name: 'Day 37: SQL Mini Project'
+        subtopics:
+          - 'Students will implement a mini-project integrating all concepts:'
+          - >-
+            Designing a sample database (e.g., Student Management System /
+            Online Store / Library Management)
+          - Creating tables with DDL
+          - Inserting and manipulating records with DML
+          - Using aggregate functions and clauses
+          - Applying different types of joins
+          - Connecting the database with Python for data retrieval
+      - name: 'Day 38: Introduction to Calculus in Data Science (Part 1)'
+        subtopics:
+          - Why Calculus is important in Data Science and ML
+          - Understanding Derivatives
+          - Concept of Partial Derivatives in multivariable functions
+          - Chain Rule and its applications
+          - Basics of Minima and Maxima in optimization
+          - Introduction to Jacobian (multivariate calculus)
+          - Definite Integrals – understanding area under the curve
+      - name: 'Day 39: Introduction to Calculus in Data Science (Part 2)'
+        subtopics:
+          - Recap of derivatives and integrals
+          - Applications of Calculus in ML (overview only, no algorithms)
+          - Working with functions of multiple variables
+          - >-
+            Visualizing derivatives and integrals using Desmos (optional
+            demonstration)
+      - name: 'Day 40: Optimization Problems'
+        subtopics:
+          - Optimization in Data Science and ML
+          - Using derivatives to find minima and maxima
+          - Real-world optimization examples (The Bridge Cost Optimization)
+      - name: 'Day 41: Linear Algebra for Machine Learning – Vectors'
+        subtopics:
+          - What is a Vector? Representation in ML
+          - Scaling Vectors
+          - Vector Addition and Geometric Interpretation
+          - Vector Subtraction
+          - Dot Product and its meaning in ML
+          - Vector Projections
+          - Orthogonality explained visually
+          - Cross Product and its applications
+          - Vector Norms (L1, L2, etc.) and distance measures
+      - name: 'Day 42: Linear Algebra for Machine Learning – Matrices'
+        subtopics:
+          - Introduction to Matrices and their role in ML
+          - 'Matrix Operations: Addition, Multiplication'
+          - Determinant of a Matrix and its significance
+          - Inverse of a Matrix
+          - >-
+            Eigenvalues and Eigenvectors – importance in PCA and dimensionality
+            reduction
+      - name: 'Day 43: Statistics for Machine Learning (Part 1)'
+        subtopics:
+          - What is Statistics? Why is it important in Data Science?
+          - 'Measures of Central Tendency: Mean, Median, Mode'
+          - 'Measures of Variability: Range, Variance, Standard Deviation'
+          - 'Measures of Shape: Skewness and Kurtosis'
+      - name: 'Day 44: Statistics for Machine Learning (Part 2)'
+        subtopics:
+          - Percentiles and their interpretation
+          - Quartiles and Interquartile Range (IQR)
+          - 'Five Number Summary: Minimum, Q1, Median, Q3, Maximum'
+          - Boxplot as a visual representation of distribution
+      - name: 'Day 45: Basics of Probability'
+        subtopics:
+          - Definition of Probability in ML
+          - Random experiments, sample space, events
+          - Expectation (Expected Value)
+          - Variance and Standard Deviation of a probability distribution
+      - name: 'Day 46: Set Theory & Probability Rules'
+        subtopics:
+          - Basics of Set Theory (Union, Intersection, Complement)
+          - Counting Techniques (Permutations and Combinations)
+          - Conditional Probability and Bayes’ Theorem
+          - Applications of conditional probability in ML
+      - name: 'Day 47: Random Variables & Distributions'
+        subtopics:
+          - 'Random Variables: Discrete vs Continuous'
+          - 'Common Distributions: Bernoulli, Binomial, Normal, Poisson'
+          - Central Limit Theorem (CLT) and why it matters in ML
+          - Point Estimation of parameters
+          - Introduction to Monte Carlo Simulation
+      - name: 'Day 48: Confidence Interval & Hypothesis Testing (Part 1)'
+        subtopics:
+          - What is a Confidence Interval and its interpretation
+          - Steps in Hypothesis Testing
+          - Null Hypothesis (H0) vs Alternate Hypothesis (H1)
+          - Errors in Hypothesis Testing (overview)
+      - name: 'Day 49: Confidence Interval & Hypothesis Testing (Part 2)'
+        subtopics:
+          - Constructing confidence intervals for population mean
+          - Significance level (α) and p-values
+          - One-tailed vs two-tailed tests
+          - Practical examples with small datasets
+      - name: 'Day 50: Statistical Tests – z-test & t-test'
+        subtopics:
+          - When to use z-test vs t-test
+          - One-sample and two-sample tests
+          - Hands-on examples of hypothesis testing using Python
+          - Interpreting test results
+      - name: 'Day 51: Confusion Matrix & Errors in ML'
+        subtopics:
+          - Introduction to Confusion Matrix
+          - True Positives, False Positives, True Negatives, False Negatives
+          - Type I Error (False Positive) and Type II Error (False Negative)
+          - Relation to precision, recall, accuracy in ML models
+      - name: 'Day 52: Advanced Statistical Tests (Self Study)'
+        subtopics:
+          - Chi-Square Test for categorical data
+          - ANOVA (Analysis of Variance) – comparing multiple groups
+          - Applications in feature selection and hypothesis testing
+      - name: 'Day 53: Introduction to Machine Learning'
+        subtopics:
+          - What is Machine Learning?
+          - Difference between AI, ML, and Deep Learning
+          - 'Types of Machine Learning: Supervised, Unsupervised, Reinforcement'
+          - Real-world applications of ML
+          - >-
+            ML workflow: Data Collection → Preprocessing → Training → Evaluation
+            → Deployment
+          - Introduction to Scikit-Learn
+      - name: 'Day 54: K-Nearest Neighbors (KNN) Algorithm'
+        subtopics:
+          - What is KNN?
+          - 'Distance metrics: Euclidean, Manhattan, Minkowski'
+          - Choosing the value of K
+          - Strengths and weaknesses of KNN
+          - Hands-on implementation with a dataset
+      - name: 'Day 55: Naive Bayes Classifier'
+        subtopics:
+          - 'Probability refresher: Bayes’ Theorem'
+          - Assumptions of Naive Bayes
+          - Implementation in Python with scikit-learn
+      - name: 'Day 56: Logistic Regression'
+        subtopics:
+          - Concept of Logistic Function (Sigmoid)
+          - Difference between Logistic and Linear Regression
+          - Implementation of Logistic Regression for binary classification
+      - name: 'Day 57: Support Vector Machine (SVM)'
+        subtopics:
+          - Intuition behind maximum margin classifier
+          - Support vectors, hyperplanes, and margins
+          - Kernel Trick (RBF, polynomial, linear)
+          - Implementation in Python
+      - name: 'Day 58: Practice of Classification Algorithms – Part 1'
+        subtopics:
+          - Hands-on practice with KNN, Naive Bayes, Logistic Regression
+          - Comparison of models on same dataset
+          - 'Evaluating classification performance with:'
+          - Accuracy
+          - Precision, Recall, F1-score
+      - name: 'Day 59: Practice of Classification Algorithms – Part 2'
+        subtopics:
+          - Hands-on practice with SVM
+          - Cross-validation
+          - Confusion Matrix & ROC-AUC Curve
+          - Model comparison and discussion
+      - name: 'Day 60: Decision Trees – Introduction'
+        subtopics:
+          - 'Decision Tree structure: Root, Internal Nodes, Leaf Nodes'
+          - Splitting criteria
+          - Entropy and Gini Index explained
+          - Overfitting in trees
+      - name: 'Day 61: Information Gain & Decision Tree Algorithm'
+        subtopics:
+          - Information Gain vs Gini Impurity
+          - ID3, C4.5, CART algorithms
+          - Implementing Decision Trees in scikit-learn
+          - Visualizing decision trees
+      - name: 'Day 62: Linear Regression – Concepts'
+        subtopics:
+          - What is Linear Regression?
+          - 'Assumptions: Linearity, Independence, Normality, Homoscedasticity'
+          - 'Error metrics: MAE, MSE, RMSE, R²'
+          - Multicollinearity check
+      - name: 'Day 63: Linear Regression Implementation'
+        subtopics:
+          - Python implementation of Linear Regression
+          - Visualizing regression line and residuals
+      - name: 'Day 64: Random Forest & AdaBoost'
+        subtopics:
+          - Random Forest Algorithm (Part 1) – Bagging approach
+          - Random Oversampling to handle imbalance
+          - Random Forest Algorithm (Part 2) – Hyperparameter tuning
+          - AdaBoost Algorithm – Concept and Python implementation
+      - name: 'Day 65: Gradient Boosting'
+        subtopics:
+          - Gradient Boosting algorithm intuition
+          - Comparison with AdaBoost
+          - Implementation in Python with scikit-learn
+      - name: 'Day 66: End-to-End SQL + Python ML Project'
+        subtopics:
+          - Connecting SQL database with Python (fetch dataset)
+          - Cleaning and preprocessing data
+          - Building a classification/regression model
+          - Evaluating results and saving model
+      - name: 'Day 67: Streamlit for ML Projects'
+        subtopics:
+          - Introduction to Streamlit
+          - Setting up Streamlit app
+          - Deploying a simple ML model with UI
+          - Making predictions interactively
+      - name: 'Day 68: Regularization'
+        subtopics:
+          - Problem of Overfitting & Underfitting
+          - L1 Regularization (Lasso Regression)
+          - L2 Regularization (Ridge Regression)
+          - Practical implementation in Python
+      - name: 'Day 69: XGBoost Implementation'
+        subtopics:
+          - Introduction to XGBoost
+          - Features and advantages over Gradient Boosting
+          - Implementation in Python
+          - Hyperparameter tuning with GridSearchCV
+      - name: 'Day 70: Feature Scaling'
+        subtopics:
+          - Why scaling is required in ML
+          - 'Methods:'
+          - MinMaxScaler
+          - StandardScaler
+          - MaxAbsScaler
+          - RobustScaler
+          - Hands-on feature scaling with datasets
+      - name: 'Day 71: Data Encoding'
+        subtopics:
+          - Importance of encoding categorical variables
+          - Label Encoding
+          - One Hot Encoding
+          - Target Encoding
+          - Implementing encoders in scikit-learn
+      - name: 'Day 72: Project Discussion – Linear Regression'
+        subtopics:
+          - Students present their Linear Regression projects
+          - Discuss dataset selection, preprocessing steps, and challenges faced
+          - Compare results across different students
+          - Q&A session on model performance and improvements
+      - name: 'Day 73: K-Means Clustering'
+        subtopics:
+          - Introduction to Clustering
+          - K-Means Algorithm – Centroids, inertia, WCSS
+          - Elbow method for choosing K
+          - Strengths and limitations of K-Means
+          - Implementation in Python
+      - name: 'Day 74: Hierarchical Clustering'
+        subtopics:
+          - Introduction to Hierarchical Clustering
+          - Agglomerative vs Divisive methods
+          - Dendrograms and linkage criteria
+          - Implementation in Python
+      - name: 'Day 75: DBSCAN'
+        subtopics:
+          - Introduction to Density-Based Clustering
+          - DBSCAN Algorithm – eps, min_samples
+          - Advantages over K-Means & Hierarchical
+          - Implementation in Python
+      - name: 'Day 76: Introduction to Natural Language Processing'
+        subtopics:
+          - What is NLP & why it matters
+          - >-
+            Applications of NLP (chatbots, sentiment analysis, translation,
+            summarization)
+          - Rule-based vs ML/DL-based NLP
+          - NLP pipeline overview
+          - 'Hands-on: Text analysis with NLTK / spaCy'
+      - name: 'Day 77: Text Processing – Tokenization & Stopword Removal'
+        subtopics:
+          - Tokenization (word, sentence, subword)
+          - Handling punctuation, lowercasing
+          - 'Stopwords: meaning & removal'
+          - 'Hands-on: Tokenization & stopword removal with Python'
+      - name: 'Day 78: Stemming, Lemmatization & Special Characters'
+        subtopics:
+          - Stemming (Porter, Snowball)
+          - Lemmatization (WordNet)
+          - Stemming vs Lemmatization
+          - Handling special characters, emojis, and noisy text
+          - 'Hands-on: Cleaning sample text data'
+      - name: 'Day 79: Word Embeddings & Advanced Text Preprocessing'
+        subtopics:
+          - Bag of Words vs Word Embeddings
+          - Word2Vec (CBOW & Skip-gram)
+          - GloVe & FastText
+          - Pre-trained embeddings in NLP
+          - >-
+            Advanced preprocessing: remove HTML tags, URLs, mentions, hashtags,
+            punctuation, chat normalization
+      - name: 'Day 80: Sentiment Analysis'
+        subtopics:
+          - Introduction to sentiment analysis
+          - Lexicon-based approach (VADER – NLTK)
+          - Transformer-based models for sentiment analysis
+          - 'Hands-on: HuggingFace Transformers for sentiment classification'
+      - name: 'Day 81: Named Entity Recognition (NER) with spaCy'
+        subtopics:
+          - What is NER?
+          - Pre-trained entity types (Person, ORG, LOC, etc.)
+          - spaCy pipeline for NER
+          - 'Hands-on: Extracting entities from text'
+      - name: 'Day 82: Neural Networks – The Brain Behind AI'
+        subtopics:
+          - Biological vs Artificial Neurons
+          - Neural Network structure (input, hidden, output layers)
+          - Weights, biases & activation functions
+          - 'Activation functions: Sigmoid, ReLU, Tanh, Softmax'
+      - name: 'Day 83: Neurons & Layers'
+        subtopics:
+          - Mathematical representation of a neuron
+          - 'Layers: fully connected, hidden layers'
+          - Forward propagation (concept)
+          - Backpropagation (concept)
+          - 'Hands-on: Simple NN with NumPy'
+      - name: 'Day 84: Forward & Backward Propagation + Optimization'
+        subtopics:
+          - Forward Propagation detailed
+          - Backpropagation & Chain Rule of derivatives
+          - Vanishing gradient problem
+          - 'Loss functions: MSE, MAE, Binary Cross-Entropy'
+          - 'Optimizers: GD, SGD, Mini-Batch GD'
+      - name: 'Day 85: Hands-On ANN + Intro to CNN'
+        subtopics:
+          - Implementing ANN with Keras/TensorFlow
+          - Evaluating ANN performance
+          - 'CNN Introduction: Filters, Convolution, Stride, Padding, Pooling'
+          - 'Hands-on: CNN for MNIST/CIFAR-10 classification'
+      - name: 'Day 86: Recurrent Neural Networks (RNNs)'
+        subtopics:
+          - Why RNNs for sequential data
+          - RNN architecture & workflow
+          - 'Problems: Exploding & Vanishing Gradients'
+          - 'Applications: text generation, time series forecasting'
+          - 'Hands-on: RNN for text sequence prediction'
+      - name: 'Day 87: Introduction to YOLO11'
+        subtopics:
+          - What is YOLO (You Only Look Once)?
+          - 'YOLO11 features: detection, classification, pose estimation'
+          - Real-time object detection overview
+          - 'Hands-on: Running pre-trained YOLO11'
+      - name: 'Day 88: YOLO11 – Custom Model Training'
+        subtopics:
+          - Preparing dataset for YOLO
+          - Data annotation tools
+          - Training YOLO11 on custom dataset
+          - Evaluating YOLO model performance
+          - 'Hands-on: Build your own object detector'
+      - name: 'Day 89: Introduction to Time Series Analysis'
+        subtopics:
+          - What is time series data?
+          - 'Components: Trend, Seasonality, Noise'
+          - Stationarity concept
+          - Applications in finance, weather, IoT
+      - name: 'Day 90: Time Series Methods & Forecasting'
+        subtopics:
+          - Moving Averages & Smoothing
+          - AR, MA, ARMA, ARIMA models
+          - ACF & PACF plots
+          - Forecasting future values
+          - 'Hands-on: Time series forecasting with Python'
+  - name: Mstering Data Analytics
+    main_topics:
+      - name: 'Day 91: Understanding the Excel Interface'
+        subtopics:
+          - What is Excel? Applications in business, education, and personal use
+          - Workbook vs Worksheet
+          - Rows, Columns, and Cells
+          - Formula Bar and Name Box
+          - >-
+            Ribbon and Tabs: Home, Insert, Page Layout, Formulas, Data, Review,
+            View
+          - Quick Access Toolbar
+          - 'Basic Navigation: selecting cells, rows, columns, scrolling, zooming'
+      - name: 'Day 92: Basic Functions'
+        subtopics:
+          - Introduction to formulas vs functions
+          - >-
+            Arithmetic & Statistical Functions: SUM(), AVERAGE(), MIN(), MAX(),
+            COUNT(), COUNTA(), ROUND(), ROUNDUP(), ROUNDDOWN()
+          - 'Text Functions: CONCATENATE()/CONCAT(), LEFT(), RIGHT(), LEN()'
+          - Round numbers and manipulate text
+      - name: 'Day 93: Date and Lookup Functions'
+        subtopics:
+          - 'Date & Time Functions: TODAY(), NOW(), DAY(), MONTH(), YEAR(),'
+          - extract day, month, year from calendar
+          - Using the Formula Bar to enter/edit formulas
+          - 'Lookup Functions: VLOOKUP(), HLOOKUP(), XLOOKUP()'
+          - Find student marks using VLOOKUP
+          - Lookup prices of products by ID
+      - name: 'Day 94: Pivot Tables and Pivot Charts'
+        subtopics:
+          - 'Introduction to Pivot Tables: Rows, Columns, Values, Filters'
+          - Creating Pivot Tables and Pivot Charts (Column, Bar, Line, Pie)
+          - Create Pivot Tables summarizing sales or other sample data
+      - name: 'Day 95: Exploratory Data Analysis (EDA)'
+        subtopics:
+          - Conditional Formatting for EDA
+          - Sales by Country report using formulas and Pivot Tables
+          - Identify Top 5 products by $ per unit
+          - "Analyze trends, top products, anomalies,\_and outliers from data"
+      - name: 'Day 96: Data Cleaning & Validation'
+        subtopics:
+          - >-
+            Data Validation: rules, drop-down lists, input messages, error
+            alerts
+          - Remove duplicates
+          - Apply Data Validation to a sample dataset
+          - split data using delimiters
+          - Split full names or addresses using Text to Columns
+          - 'Text cleaning: TRIM(), PROPER(), UPPER(), LOWER()'
+          - Handle blanks and missing values
+      - name: 'Day 97: Student Dashboard Presentations – Part 1'
+        subtopics:
+          - Open and present dashboards
+          - >-
+            Highlight analyses: Pivot Tables/Charts, formulas, conditional
+            formatting, data cleaning
+          - Explain choice of functions, charts, and formatting
+      - name: 'Day 98: Introduction to BI & First Dashboard (Chocolates Dataset)'
+        subtopics:
+          - What is Business Intelligence (BI)?
+          - Importance of BI in decision-making
+          - Introduction to Power BI and its components
+          - Installing Power BI Desktop
+          - Exploring sample chocolates dataset
+          - 'Creating a basic dashboard:'
+          - Bar Chart (Sales by Chocolate Type)
+          - Line Chart (Sales Trend over Time)
+          - Save and share the first Power BI report
+      - name: 'Day 99: Power BI Basics, Model View & Basic Data Cleaning'
+        subtopics:
+          - Understanding Model View in Power BI
+          - Overview of Power Query Editor
+          - 'Basic data cleaning operations:'
+          - Replace values
+          - Trim spaces
+          - Change data types
+          - Hands-on exercises with chocolates dataset
+      - name: 'Day 100: Power Query Editor – Advanced Cleaning'
+        subtopics:
+          - Remove duplicates
+          - Replace null/missing values
+          - Create conditional columns (IF logic)
+          - Split columns, transform data types
+          - Hands-on exercises on sample dataset
+      - name: 'Day 101: Data Modeling & Dashboard Creation with Charts'
+        subtopics:
+          - >-
+            Understanding data models & relationships (One-to-Many,
+            Many-to-Many)
+          - Creating table relationships
+          - Introduction to DAX basics (SUM, COUNT, AVERAGE)
+          - 'Dashboard Creation with multiple visuals:'
+          - Bar Chart
+          - Line Chart
+          - Pie Chart
+          - Column Chart
+          - Card Visual (for KPIs)
+          - Adding slicers and filters for interactivity
+      - name: 'Day 102: Real-World Use Case – Classroom Practice'
+        subtopics:
+          - Teacher provides a real-world dataset (Sales/HR/Students data)
+          - Students clean and transform data using Power Query
+          - Build dashboards independently

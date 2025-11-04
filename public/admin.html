@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manage Course Syllabuses</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+  <style>
+    :root { --brand:#1f2937; --accent:#2563eb; --muted:#6b7280; --danger:#dc2626; }
+    .nav-grad{ background:linear-gradient(90deg,#f97316,#ec4899,#8b5cf6); }
+    .btn-grad{ display:inline-flex; align-items:center; justify-content:center; gap:.375rem; background:linear-gradient(90deg,#f97316,#ec4899,#8b5cf6); background-size:200% 200%; color:#fff; text-transform:uppercase; letter-spacing:.02em; padding:.5rem 1rem; border-radius:9999px; transition:filter .2s ease, box-shadow .2s ease, background-position .6s ease; }
+    .btn-grad:hover{ filter:brightness(1.05); box-shadow:0 8px 20px rgba(139,92,246,.35); background-position:100% 0; }
+    .form-grad{ background:linear-gradient(90deg,#ffedd5,#e7e0ff); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <main class="min-h-screen p-4">
+    <div class="max-w-4xl mx-auto space-y-8">
+      <header class="nav-grad text-white rounded-b-lg shadow-md p-4 flex items-center justify-between">
+        <h1 class="text-2xl font-semibold">Manage Course Syllabuses</h1>
+        <a href="/index.html" class="btn-grad text-sm">Go to Generator</a>
+      </header>
+
+      <section class="bg-white rounded-2xl shadow p-6 mt-4">
+        <h2 class="text-lg font-semibold mb-4">Create New Course</h2>
+        <div class="grid gap-3 sm:grid-cols-2">
+          <input id="courseName" type="text" placeholder="Course name (e.g., DevOps)" class="w-full border rounded-lg px-3 py-2 sm:col-span-1" />
+          <input id="newCourseFile" type="file" accept=".xlsx,.xls" class="w-full border rounded-lg px-3 py-2 sm:col-span-1" />
+        </div>
+        <div class="mt-4 flex items-center justify-between gap-3">
+          <button id="btnCreateCourse" class="btn-grad">Create Course</button>
+          <a href="/api/sample-excel" class="btn-grad text-sm">Download Sample Excel</a>
+        </div>
+        <p class="text-xs text-gray-500 mt-4">Expected columns: topic, main_topic, subtopic</p>
+      </section>
+
+      <section class="form-grad mt-4 rounded-2xl shadow p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-semibold">Existing Courses</h2>
+          <button id="btnRefresh" class="btn-grad text-sm">Refresh</button>
+        </div>
+        <div id="courseList" class="divide-y"></div>
+      </section>
+    </div>
+  </main>
+
+  <div id="toast" class="fixed top-4 right-4 hidden bg-white border shadow px-4 py-2 rounded-lg text-sm"></div>
+
+  <script src="/admin.js" type="module"></script>
+</body>
+</html>

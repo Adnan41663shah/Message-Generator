@@ -1,0 +1,599 @@
+name: Cloud DevOps Engineering Course
+topics:
+  - name: Linux Essentials for DevOps Professionals
+    main_topics:
+      - name: 'Day 1: Embarking on the DevOps Journey'
+        subtopics:
+          - Introduction to DevOps
+          - How IT Company Works
+          - What is an Application?
+          - Developers vs Testers vs DevOps
+      - name: 'Day 2: The Strategic Imperative of DevOps'
+        subtopics:
+          - Top Features of Linux
+          - Linux Everywhere
+          - Unlocking Linux Careers
+          - Why AWS Stands Out in the Cloud Market
+          - Overview of AWS
+          - Customer Success Stories
+          - Scalability and Flexibility of Business with AWS
+          - Comparing AWS with Competitors
+          - Why DevOps is a Growing Career Field
+          - High Demand for DevOps Professionals
+          - Salary Expectations and Career Growth
+          - Skills and Expertise in DevOps
+          - Certifications and Learning Resources
+          - The Future of DevOps Careers
+          - Goal to Achieve in CDEC
+      - name: 'Day 3: Navigating the Linux Landscape'
+        subtopics:
+          - Getting Started with Operating Systems
+          - Different Types of Operating Systems
+          - How Operating Systems Impact Your Daily Life
+          - Windows vs Unix vs Linux
+          - Ownership and Origin
+          - Cost and Licensing
+          - Security and Privacy
+          - User Interface
+          - What is a Server?
+          - Desktop OS vs Server OS
+          - Introduction to Linux
+          - Architecture of Linux
+      - name: 'Day 4: Mastering the Linux Prompt'
+        subtopics:
+          - Understanding the Linux Command Prompt
+          - Decoding the Structure of the Command Prompt
+          - 'Effective Command Prompt Usage: A Step-by-Step Guide'
+          - >-
+            Making the Command Prompt Your Own: Customization Tips (Advanced
+            Concept)
+          - Introduction to Linux Basic Commands
+          - Getting Started with the Linux Terminal
+          - 'Essential System Information: Commands and Tools for Linux'
+      - name: 'Day 5: Delving Deep into the Linux File System'
+        subtopics:
+          - Navigating the File System
+          - File and Directory Management
+          - Viewing and Editing Files
+          - Copy, Move, and Delete Files
+      - name: 'Day 6: Delving Deep into the Linux File System'
+        subtopics:
+          - Mastering the Linux File System Hierarchy
+          - The Significance of the Linux File System Hierarchy
+          - 'Inside the Linux Root Directory: What You Need to Know'
+          - Understanding the Functionality of Common Linux Directories
+          - 'Introduction to Linux Shortcuts: Boost Your Efficiency'
+      - name: 'Day 7: Mastering Text Editing with VIM'
+        subtopics:
+          - Overview of Vim and its History
+          - 'Basic Concepts: Modes in Vim (Command, Insert, Visual, Execute)'
+          - Basic Navigation in Command Mode
+          - Text Manipulation
+          - Undo and Redo
+          - Entering Insert Mode
+          - Editing Text in Insert Mode
+          - Navigating and Editing in Insert Mode
+          - Exiting Insert Mode
+      - name: 'Day 8: The Editor''s Lair: Mastering Text Editing with VIM'
+        subtopics:
+          - Entering Execute Mode
+          - 'Executing Basic Commands: File Operations, Searching, Line Numbering'
+          - Entering Visual Mode
+          - Manipulating Text in Visual Mode
+          - Revisioning the complete vim editor
+      - name: 'Day 9: Managing Users and Permissions in Linux'
+        subtopics:
+          - Overview of User and Permission Management
+          - Types of Users
+          - Using useradd Command
+          - Setting User Passwords
+          - Managing User Groups
+          - Removing Users
+          - Introduction to Affected Files
+          - User Home Directories
+          - Configuration Files
+          - Switching Between Users in Linux
+          - Using su Command
+          - Using Sudo Command
+      - name: 'Day 10: Managing Users and Permissions in Linux'
+        subtopics:
+          - Importance of Password Security
+          - Using passwd Command
+          - Password Policy Settings
+          - Account Locking and Expiration
+          - Understanding /etc/shadow fields
+          - Using chage Command
+          - Introduction to Linux Groups
+          - Fields of /etc/group and /etc/gshadow
+          - Types of Groups
+          - Creating and Deleting Groups
+          - Modifying Groups
+          - Managing group Memberships
+          - Viewing and Editing Group Information
+      - name: 'Day 11: Managing Users and Permissions in Linux'
+        subtopics:
+          - Importance of File Permissions in Linux
+          - Explanation of rwx (read, write, execute) Permissions
+          - How Permissions are Displayed with ls -l
+          - 'Example: Breaking Down the Permission String (e.g., -rwxr-xr--)'
+          - Introduction to File Types
+          - User Defined File Types
+          - System Defined File Types
+      - name: 'Day 12: Managing Users and Permissions in Linux'
+        subtopics:
+          - Link Count Basics
+          - Link Count for Directories
+          - Link Count for Files
+          - Comparing Hard and Soft Links
+          - Importance of sudo for Privilege Escalation
+          - Difference Between Regular User Commands and sudo Commands
+          - Configuring sudo Access
+          - sudo Command Syntax and Example
+      - name: 'Day 14: Automation and Data Handling in Linux'
+        subtopics:
+          - Overview of Archiving
+          - 'Common Use Cases: Backups, Data Transfer, Organization'
+          - Creating and Extracting Archives with tar
+          - Managing Archive Contents
+          - Introduction to Compression
+          - The Role of Compression in Reducing File Sizes
+          - Differences Between Compression Formats (e.g., gzip, bzip2, xz)
+          - Using gzip and gunzip
+          - Using bzip2 and bunzip2
+          - Using xz and unxz
+          - Combining Archiving and Compression
+          - 'Practical: Compressing Files with tar, gzip, bzip2, xz'
+          - 'Practical: Decompressing Files with tar, gunzip, bunzip2, unxz'
+          - Introduction to CronTab
+          - Understanding The CronTab Syntax
+          - Creating and Managing Cron Jobs
+          - >-
+            Automating Routine Tasks like Backups, System Updates, and Cleanup
+            Scripts
+      - name: 'Day 15: Automation and Data Handling in Linux'
+        subtopics:
+          - Introduction to Search and Filter Utilities
+          - Importance of Searching and Filtering Data in Linux
+          - 'Overview of Key Utilities: grep, cat, sort, UNIQUE'
+          - Read Files Using cat, uniq, and SORT
+          - Introduction to the find Utility
+          - Basic Syntax of FIND
+          - Advanced Usage and Filtering Options
+          - >-
+            Practical Examples of Finding Files by Name, Type, Size, and
+            Modification DATE
+      - name: 'Day 16: Managing Processes and Optimizing Performance'
+        subtopics:
+          - Introduction to Processes
+          - Types of Processes and Jobs
+          - Basic Process Management Commands
+          - Understanding Process States
+          - Job Control Basics
+          - Understanding Process and Thread Management
+          - Exploring with ps Command
+          - Real-Time Monitoring with top
+          - Analyzing Performance Metrics
+      - name: 'Day 17: Managing Processes and Optimizing Performance'
+        subtopics:
+          - Understanding Process Priority and nice Values
+          - Finding Process IDs
+          - Sending Signals to Processes
+          - 'Practical Example: Adjusting Priority of Long-Running Processes'
+          - Overview of Process States
+          - Different Job Types and States
+          - Visualizing The Process Tree
+          - 'Practical Example: Analyzing Process Behavior and Lifecycle'
+      - name: 'Day 18: Basic Networking in Linux'
+        subtopics:
+          - Overview of Networking Fundamentals
+          - Network Types and Protocols
+          - Using ifconfig and ip Commands
+          - Basic Network Configuration Steps
+          - Configuring Static IP with nmtui and nmcli
+          - >-
+            Example: Configuring a Static IP Address and Verifying Network
+            Connectivity
+      - name: 'Day 19: Revision Session'
+        subtopics:
+          - Revision Session (ONLY SATURDAY)
+      - name: 'Day 20: Exam'
+        subtopics:
+          - EXAM (ONLY SATURDAY)
+  - name: 'AWS Cloud Journey: Essentials to Expertise'
+    main_topics:
+      - name: 'Day 1: Introduction to Virtualization and Cloud Computing'
+        subtopics:
+          - Introduction to Virtualization
+          - Virtualization vs Cloud
+          - Cloud Models (IAAS, PAAS, SAAS)
+          - AWS Account creation
+      - name: 'Day 2: Getting Started with AWS and EC2 Instances'
+        subtopics:
+          - Introduction to AWS Dashboard
+          - Region vs Availability Zone (AZ)
+          - Introduction to EC2 service
+          - Create first Instance of Ubuntu
+      - name: 'Day 3: Getting Started with AWS and EC2 Instances'
+        subtopics:
+          - Security Group (SSH and RDP Port)
+          - Create Instance of Windows
+          - Remote access of Linux and Windows machines
+      - name: 'Day 4: Linux Essentials and Web Server Deployment'
+        subtopics:
+          - SSH service (Key based Authentication)
+          - 'Practical: Create another login user'
+          - Deploy web server using NGINX
+      - name: 'Day 5: Exploring the EC2 Dashboard and Advanced Features'
+        subtopics:
+          - Explain complete Dashboard of EC2
+          - Instance Types
+          - Status check, AMI (Types, Create, and copy)
+          - Launch Template, Purchasing Options
+      - name: 'Day 6: EBS Volume Management and Backup Strategies'
+        subtopics:
+          - EBS Volumes and its Types
+          - Attach Volumes, Create partition, and mount
+      - name: 'Day 7: EBS Volume Management and Backup Strategies'
+        subtopics:
+          - Partitions / Permanent mount
+          - Take backup using snapshot
+          - Automate snapshot using snapshot policy
+      - name: 'Day 8: Network File Systems in AWS'
+        subtopics:
+          - Introduction to NFS
+          - Create EFS file System
+          - Attach and mount EFS file System
+      - name: 'Day 9: Networking Fundamentals and CIDR Basics'
+        subtopics:
+          - Basics of Networking
+          - CIDR (Classless Inter-Domain Routing)
+      - name: 'Day 10: Virtual Private Cloud (VPC) Configuration'
+        subtopics:
+          - Introduction to VPC
+          - CIDR Calculation for Subnets
+          - Create VPC and Subnet
+      - name: 'Day 11: Virtual Private Cloud (VPC) Configuration'
+        subtopics:
+          - Create IGW and route
+          - Launch Private and Public Instance
+          - NAT Gateway
+          - VPC Peering
+      - name: 'Day 12: Network Interface and Security Enhancements'
+        subtopics:
+          - NIC and Elastic IP
+          - Placement Groups
+          - NACL vs Security Group
+      - name: 'Day 13: Load Balancing in AWS'
+        subtopics:
+          - Introduction to Load Balancer
+          - Load Balancer and its Types
+          - 'Difference: Application Load Balancer & Network Load Balancer'
+      - name: 'Day 14: Load Balancing in AWS'
+        subtopics:
+          - Create Application Load Balancer
+      - name: 'Day 15: Auto Scaling for High Availability'
+        subtopics:
+          - Auto Scaling and its Types
+          - Create Launch Template
+          - Create Auto Scaling Group(Demo)
+      - name: 'Day 16: Auto Scaling for High Availability'
+        subtopics:
+          - Demo Auto Scaling using stress command
+          - Scheduled Scaling Theory
+          - Predictive Scaling Theory
+      - name: 'Day 17: Revision and Recap Session'
+        subtopics:
+          - Recap of EC2, VPC, Load Balancing, Auto Scaling
+          - Q&A Session for Clarification
+      - name: 'Day 18: EXAM'
+        subtopics:
+          - EXAM (ONLY SATURDAY)
+  - name: DevOps Essentials for Modern Engineering
+    main_topics:
+      - name: 'Day 1: Introduction to DevOps'
+        subtopics:
+          - Introduction Software Industry
+          - SDLC - Waterfall and Agile Model
+          - Explain DevOps Syllabus
+          - Introduction to API, its types, and use cases
+          - What is Frontend vs backend
+          - Stages of application development [developer/tester/db/devops teams]
+      - name: 'Day 2: Source Code Management Tool (GIT)'
+        subtopics:
+          - Introduction to SCM tool
+          - Difference Between Centralise-VCS and Distributed-VCS
+          - Introduction to GIT
+          - Explain Lifecycle of GIT
+          - GIT CLI instalation
+          - GIT Command (work on local-repo)
+          - git init, add, commit, logs, revert, restore, status
+      - name: 'Day 3: Source Code Management Tool (GIT)'
+        subtopics:
+          - git branch, common types of branches, checkout, diff, merge
+          - Introduction to Remote Repo (GitHub)
+          - git clone, pull, push commands
+          - git init, config, remote
+      - name: 'Day 4: Collaborate in project using GITHUB'
+        subtopics:
+          - GITHUB DASHBOARD
+          - Difference between Public and Private Repo
+          - How to Search Public Repos
+          - Fork and Pull Requests
+          - Authentication methods (HTTP, SSH)
+      - name: 'Day 5: Collaborate in project using GITHUB'
+        subtopics:
+          - Difference between Github and Gitlab
+          - Difference between CE and EE Gitlab
+          - How to merge repo branches in gitlab
+          - How to resolve conflicts
+          - Explain IDE, install visual studio code, Auto Git
+      - name: Revision Session
+        subtopics:
+          - Recap of all key concepts of GIT, GITHUB, GITLAB
+      - name: 'Day 6: Introduction to Containerization and Docker Basics'
+        subtopics:
+          - Difference between Monolithic and MicroServices
+          - >-
+            Difference between Traditional, Virtualization, and Containerization
+            Deployment
+          - Intriduction to Containerization, Container, Image
+          - Introduction to Docker
+          - Difference between Docker CE and Docker EE
+          - Install Docker engine
+          - Run first container
+      - name: 'Day 7: Managing and Interacting with Docker Containers'
+        subtopics:
+          - Explain docker container commands
+          - Essential Commands for Container Management using Docker
+          - Experiment with Docker Containers - Create, Start, Stop, and Run
+          - Expose applications to the World
+          - Interact with Containers using 'exec'
+          - Inspects and Troubleshooting Steps in Docker
+          - >-
+            docker run (-d, -p, -P, -e, --name), create, start, stop, rm, ps
+            (-aq), exec (-it), inspect, cp, logs, stats
+      - name: 'Day 8: Working with Docker Images and DockerHub/ECR'
+        subtopics:
+          - Introduction to docker images and its naming
+          - Introduction to Dockerhub and ECR
+          - docker image commands
+          - docker pull, login, push
+          - docker commit, tag, image rm, rmi, save, load, prune
+      - name: 'Day 9: Understanding Docker Networking'
+        subtopics:
+          - Introduction to Docker Network
+          - Explain different network drivers
+          - docker network commands
+          - create, delete, run (--network)
+      - name: 'Day 10: Persistent Storage with Docker Volumes'
+        subtopics:
+          - Introduction to Docker Volume
+          - docker volume commands
+          - Create, delete, run (-v)
+      - name: 'Day 11: Writing and Understanding Dockerfiles'
+        subtopics:
+          - Introduction to Dockerfile
+          - >-
+            FROM, LABEL, RUN, CMD, ENTRYPOINT, ENV, ARG, COPY, ADD, EXPOSE,
+            USER, WORKDIR
+          - Docker build, push, pull
+      - name: 'Day 12: Building and Deploying Applications with Docker'
+        subtopics:
+          - Create docker file for frontend and backend application
+          - Deploy three tier application deployment example
+      - name: >-
+          Day 13: Introduction to Docker Compose and Multi-Container
+          Applications
+        subtopics:
+          - Brief Introduction to Docker Compose
+          - Deploy three tier application using Docker Compose
+      - name: Revision Session (Docker)
+        subtopics:
+          - Recap of all key concepts of Docker
+      - name: 'Day 15: Introduction to Kubernetes and Orchestration'
+        subtopics:
+          - Intriduction to Kubernetes.
+          - Why we need orchestration tool
+          - Why kubernetes
+          - Architecture of kubernetes
+          - Lifecycle of the pods
+          - >-
+            Enlist Cluster creation methods (minikube, kind, kubeadm, EKS, GKE,
+            AKS, etc)
+      - name: 'Day 16: Setting Up Kubernetes on AWS (EKS)'
+        subtopics:
+          - Create cluster using EKS
+          - Install kubectl, access EKS cluster
+          - Introduction to Pods, and service
+          - Main Container and Side Car Containers
+          - Run first Pod by kubectl run
+          - Expose pod using kubectl expose
+      - name: 'Day 17: Kubernetes Networking Fundamentals'
+        subtopics:
+          - >-
+            Kubernetes network (intra-pod and inter-pod communication) with
+            examples
+          - Pod IP, Container Port, Node Ip, Node Port, Loadbalancer
+      - name: 'Day 18: Working with Kubernetes YAML Manifests'
+        subtopics:
+          - Introduction to YAML scripts
+          - Write manifest files for Pods and Services
+          - Explain concept of Namespace, ReplicationController, ReplicaSet
+      - name: 'Day 19: Managing Workloads: Deployments & StatefulSets'
+        subtopics:
+          - Deployments vs StatefulSet
+          - Write Manifests for Deployments and StatefulSet
+          - Explain DaemonSet
+      - name: 'Day 20: Managing Configuration and Persistent Storage'
+        subtopics:
+          - Store variables using ConfigMap and Secrets
+          - Achive Persistent Storage using PV and PVC, Dynamic Volume using EBS
+      - name: 'Day 21: Autoscaling in Kubernetes'
+        subtopics:
+          - Types of AutoScaling in k8s
+          - Write Manifests for HPA
+      - name: 'Day 22: Ingress and Load Balancing in Kubernetes'
+        subtopics:
+          - Introduction to Ingress
+          - Install Nginx Ingress Controller using Menifests
+          - >-
+            Write Manifest for Ingress (Path based routing and Name based
+            routing)
+      - name: 'Day 23: Deploying a Three-Tier Application in Kubernetes'
+        subtopics:
+          - >-
+            Write manifests to deploy three tier application: HPA, Deployment,
+            Service, Ingress
+      - name: Revision Session (Kubernetes)
+        subtopics:
+          - Recap of all key concepts of Kubernetes
+      - name: HALF SYLLABUS EXAM
+        subtopics: []
+      - name: 'Day 24: Introduction to Infrastructure as Code (IAC) with Terraform'
+        subtopics:
+          - Introduction to IAC
+          - >-
+            Why we need IAC (Difference between Shell Script, Ansible, and IAC
+            tool)
+          - Introduction to Terraform
+          - Terraform Language (Basic Syntax)
+          - Enlist the Blocks used in Terraform Language
+      - name: 'Day 25: Managing Security and User Data in Terraform'
+        subtopics:
+          - Install Terraform in Linux system
+          - Write first Terraform script to deploy EC2 instance
+          - Explain Terraform lifecycle
+          - Explain different files that are created in terraform lifecycle
+      - name: 'Day 26: Deploying Load Balancer and Auto Scaling with Terraform'
+        subtopics:
+          - Write terraform script to deploy Security Group
+          - Explain HEREDOC concept un UserData
+          - >-
+            Explain (Provider, Resource, Variable, Data, Output) blocks in above
+            example
+      - name: 'Day 27: Working with Terraform Modules and Dependencies'
+        subtopics:
+          - Write a terraform script to deploy LoadBalancer and Autoscaling
+      - name: 'Day 28: Managing Terraform State and Multi-Environment Deployments'
+        subtopics:
+          - Explain module concept
+          - Write module for VPC, Subnet, and EC2 instance
+          - Explain types of dependencies
+          - Explain Blocks (terraform, module, output)
+      - name: 'Day 29: Advanced Terraform Concepts: Workspaces and Loops'
+        subtopics:
+          - Storing tfstate file on remote location
+          - Create multi environment script using .tfvar file
+      - name: 'Day 30: Terraform Commands and Provisioners'
+        subtopics:
+          - Explain concept of terraform workspace (Theory)
+          - Explain Loops (count, for-each, for)
+      - name: 'Day 31: Deploying an EKS Cluster with Terraform'
+        subtopics:
+          - Terraform Commands (Taint, Import, Destroy -t)
+          - Terraform Provisioners (remote, local, file)
+      - name: 'Day 32: Code Infrastructure with Terraform'
+        subtopics:
+          - Write a Terraform script to deploy eks cluster
+      - name: Terraform Revision
+        subtopics: []
+      - name: 'Day 33: Introduction to Jenkins and CI/CD'
+        subtopics:
+          - Introduction to CI process
+          - Difference between continuous Delivery and Deployment
+          - Introduction to Jenkins
+          - Install Jenkins server
+      - name: 'Day 34: Creating Jobs and Integrating GIT in Jenkins'
+        subtopics:
+          - Create first free style job
+          - Install GIT plugin
+          - Create freestyle job to pull the source code
+      - name: 'Day 35: Managing Jenkins Agents and Job Configurations'
+        subtopics:
+          - Install SSH Build Agent Plugin
+          - Create and add attach SSH agents to Master Jenkins
+          - Explain JOB Configuration, Parameterize Jobs
+      - name: 'Day 36: Introduction to Jenkins Pipelines'
+        subtopics:
+          - Install Pipeline plugin
+          - Scripted Pipeline vs Declarative Pipeline
+          - Write a basic 4 stage pipeline
+          - Add Pull stage
+      - name: 'Day 37: Build Tool: Maven Essentials'
+        subtopics:
+          - Install Maven
+          - Show creating Maven Project
+          - Explain Maven Dir Hierarchy, pom.xml file
+          - Explain Maven Phases
+          - Maven Clean Package to build .war artifact
+      - name: 'Day 38: Integrating Maven with Jenkins'
+        subtopics:
+          - Intgrate maven in jenkins
+          - Add Build Stage to Maven
+      - name: 'Day 39: Code Quality Check with SonarQube'
+        subtopics:
+          - Explain Sonarqube
+          - Explain QA Result (bugs, vulnerabilities, code smell, etc)
+          - Create sonarqube server
+          - Scan Project using maven
+          - Create Quality Gate to explain code QA Failure
+      - name: 'Day 40: Integrating SonarQube with Jenkins'
+        subtopics:
+          - Inegrate sonarqube with Jenkins
+          - Add Test stage
+          - create webhook with Sonarqube for qualigate wait
+      - name: 'Day 41: Storing Artifacts and Deploying with Jenkins'
+        subtopics:
+          - Store artifact (.war) to s3
+          - Add deploy stage
+      - name: 'Day 42: Advanced Jenkins Pipelines: Infrastructure as Code'
+        subtopics:
+          - >-
+            Create Infrastructure Pipeline with Pull, Test (tf plan), Deploy (tf
+            apply) stage
+          - Create above pipeline to deploy EKS cluster
+      - name: >-
+          Day 43: Deploying a Three-Tier Application Using Jenkins Pipeline on
+          EKS
+        subtopics:
+          - Deploy three tier application using pipeline on eks
+      - name: 'Day 44: Revision Session'
+        subtopics:
+          - Recap of all Key concepts covered Jenkins, Maven, Sonarqube
+      - name: 'Day 45: Monitoring Tool (Datadog)'
+        subtopics:
+          - Introduction to Datadog
+          - Installing the Datadog Agent on Linux, Docker
+          - Introduction to the Datadog UI
+          - Introduction to Infrastructure Monitoring
+          - Monitoring Hosts
+          - Monitoring Docker and Kubernetes
+      - name: 'Day 46: Monitoring Tool (Datadog)'
+        subtopics:
+          - Setting up Datadog agent on Kubernetes
+          - Host Maps and Container Maps
+          - Basic Integrations with AWS
+          - Understanding metrics in Datadog
+          - Types of metrics (gauge, counter, histogram)
+          - Collecting and visualizing metrics
+      - name: 'Day 47: Monitoring Tool (Datadog)'
+        subtopics:
+          - Custom Metrics in DataDog
+          - Sending custom metrics to Datadog
+          - Building basic dashboards for metrics
+          - Creating custom dashboards
+          - Timeboards and Screenboards
+      - name: 'Day 48: Monitoring Tool (Datadog)'
+        subtopics:
+          - Introduction to Log Management
+          - Collecting logs with the Datadog agent
+          - Introduction to alerting in Datadog
+          - Creating monitors and alerts
+      - name: 'Day 49: Revision Session'
+        subtopics:
+          - >-
+            Comprehensive Q&A to cover remaining doubts and final concepts
+            review
+      - name: 'Day 50: Exam'
+        subtopics:
+          - EXAM (ONLY SATURDAY)

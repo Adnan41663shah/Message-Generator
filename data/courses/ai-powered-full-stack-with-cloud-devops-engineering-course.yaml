@@ -1,0 +1,1111 @@
+name: AI Powered Full Stack With Cloud DevOps Engineering Course
+topics:
+  - name: Frontend
+    main_topics:
+      - name: 'Day-1: Intro of full Stack development'
+        subtopics:
+          - Intro of full stack development
+          - What is Full Stack Development
+          - Web Application(what & why)
+          - Why we have to choose
+          - High Demand & Job Opportunities
+          - Cost-Efficiency for Companies
+          - Faster Development & Deployment
+          - Continuous Learning & Growth
+          - How Websites works?
+      - name: "Day-2: Introduction of html\_& Basic Setup"
+        subtopics:
+          - Intro of html
+          - What is HTML
+          - Importance of HTML in Web Development
+          - VS code setup
+          - "Introduction of html\_& Basic Setup"
+          - >-
+            Setting Up VS Code for HTML- creating a html file and live server
+            extention)
+          - "HTML page structure\_(HTML tag, head tag, body tag)"
+          - Explanation of HTML tags, elements, and attributes.
+      - name: 'Day-3: Introduction to HTML Formatting and Basic Elements'
+        subtopics:
+          - Text Formatting
+          - Creating Headings (<h1> to <h6>), Paragraphs (<p>)
+          - Line Breaks (<br>),
+          - Bold, Italic, and Underline Text , Strong and Emphasized Text
+          - creating list - ordered and unordered lists
+          - "hyperlinks: <a> tag\_(Creating a Basic Link, Opening Links in a New Tab, Linking to Another Page, Creating an Email Link"
+          - div tag, sub, sup tag
+          - >-
+            Assign a small exercise to create a basic HTML webpage with
+            headings, paragraphs, lists, and hyperlinks
+      - name: 'Day-4: Advanced HTML Elements and HTML5 Features'
+        subtopics:
+          - Table(table, thead, tbody, tr, th, td)
+          - Forms(Forms collect user input using various input fields)
+          - input tags, all types, button
+      - name: 'Day-5: Advanced HTML Elements and HTML5 Features'
+        subtopics:
+          - Image tags (attribute- src, alt)
+          - Semantic tags(for SEO) - header, footer, main, section, nav
+          - HTML5 features (Embedding a Video, Embedding Audio) Assignment
+          - 'Assignment: Create a Webpage Using Learned Concepts'
+          - REVISION OF HTML
+      - name: 'Day-6: Fundamentals of CSS and Styling Methods'
+        subtopics:
+          - Introduction to CSS
+          - what is CSS
+          - Need of CSS
+          - Types of CSS
+          - Inline CSS vs. Internal CSS vs. External CSS
+          - How to add CSS in Html Page
+          - Syntax of CSS rules
+      - name: 'Day-7: CSS Text Styling and Selectors'
+        subtopics:
+          - What are CSS selectors and how to use them
+          - "Selectors: element, class, ID\_, Universal selector"
+          - >-
+            Text properties: color, font-family, font-size, font-weight,
+            text-align, text-decoration
+          - background-color, color, Colour Picker Extension
+          - how to add fonts
+          - Google Fonts and custom fonts
+      - name: 'Day-8: CSS Box Model and Display Properties'
+        subtopics:
+          - What is CSS Box model
+          - margin, border, padding, content
+          - height, width, min-height, min-width
+          - 'Display property: block, inline, inline-block'
+          - view port(vh, vw), border-radius
+      - name: 'Day-9: Advanced CSS Selectors and Pseudo-Classes'
+        subtopics:
+          - What are Pseudo-class selectors
+          - 'Pseudo-classes: :hover, :active, :focus'
+          - Some advance CSS selectors
+          - descendant, child, sibling, attribute
+      - name: 'Day-10: Transition And Transform'
+        subtopics:
+          - What is Transition
+          - transition, transition-delay, transition-duration
+          - What is transform
+          - How transform works
+          - translate, rotate, scale
+      - name: 'Day-11: Responsive Layout Design with CSS Flexbox'
+        subtopics:
+          - What is flexbox
+          - CSS Flexbox layout
+          - >-
+            display-flex, flex-direction, gap, flex-wrap, justify-content, 
+            align-items
+          - Design a complex webpage layout using Flexbox
+          - ICONS Librabries, (google, Boxicons)
+      - name: 'Day-12: Advanced CSS Layouts:  Grid'
+        subtopics:
+          - What is grid layout
+          - CSS Grid layout
+          - Display-grid, grid-tempelate-column, gap, grid-template-row
+          - Design a complex webpage layout using Grid
+      - name: 'Day-13: Advanced CSS Concepts: Positioning and Layout Techniques'
+        subtopics:
+          - Some advance CSS topics
+          - CSS Position
+          - relative, absolute, fixed, sticky, static
+          - top, bottom, left, right
+      - name: 'Day-14: Responsive Web Design: Principles and Media Queries'
+        subtopics:
+          - Responsive design principles
+          - What is responsive web designing
+          - Media queries
+          - Practice with project (Only saturday)
+      - name: 'Day-15: Getting Started with Bootstrap: Grid System and Layouts'
+        subtopics:
+          - What is framework, need of framework
+          - Introduction to Bootstrap (advantages and features)
+          - How to use bootstrap
+          - what are utility classes
+          - >-
+            Setting up Bootstrap: Using CDN or downloading files, basic template
+            structure
+          - Some basic bootstrap classes (container, container-fluid)
+          - Understanding the Bootstrap grid system (container, rows, columns)
+          - 'Hands-on practice: Creating layouts with Bootstrap''s grid system'
+      - name: >-
+          Day-16: Building Responsive UI with Bootstrap Components: Navigation
+          Bars and Buttons
+        subtopics:
+          - What are Bootsrap components
+          - How to use Bootstrap components
+          - 'Overview of Bootstrap components: Navigation bars, buttons'
+          - bootstrap colors , background colors
+          - Creating responsive navigation bars with Bootstrap
+          - Styling buttons and using button groups
+          - 'Hands-on practice: Creating navigation bars and styled buttons'
+      - name: 'Day-17: Enhancing Web Design with Bootstrap: Forms, Cards, and Tables'
+        subtopics:
+          - "Bootstrap components continued: Forms, cards\_, tables"
+          - form-control, form-label
+          - Building responsive forms with Bootstrap
+          - Creating card-based layouts with Bootstrap
+          - 'Hands-on practice: Creating forms and card layouts with Bootstrap'
+      - name: >-
+          Day-18: Mastering Responsive Design with Bootstrap: Utilities,
+          Breakpoints, and Advanced Features
+        subtopics:
+          - 'Responsive design principles: Media queries, viewport meta tag'
+          - Using Bootstrap's responsive utilities and breakpoints
+          - >-
+            Hands-on practice: Making a website fully responsive using Bootstrap
+            utilities and features
+          - Project
+          - FULL SYLLABUS - BOOTSTRAP
+      - name: >-
+          Day-19: Introduction to Operating Systems, Computer Programs, and
+          JavaScript Basics
+        subtopics:
+          - What is OS, Application
+          - What is computer program
+          - What is the purpose of programming
+          - What is JavaScript, history
+          - JavaScript Overview(Uses & Definition)
+          - Purpose of Javascript
+      - name: 'Day-20: JavaScript Data Types: Primitive and Reference Types'
+        subtopics:
+          - What is Data Type
+          - Types of Data Type - Primitive and Non-primitive(refernce types)
+          - Primitive - number, string, boolean, null, undefined, bigInt
+          - Non-Primitive - array, object, function
+      - name: 'Day-21: JavaScript Variables, Operators, and Comparison Logic'
+        subtopics:
+          - What are  Variables
+          - How to declare variables  (Let ,Const and Var)
+          - What are operators
+          - >-
+            Arithmetic operator - Addition, Subtraction, Multiplication,
+            Division  Modulo or Reminder Operator
+          - Exponentiation Operator,Booleans,Practice
+          - >-
+            Greater than and greater than equal to ,Less then and less then
+            equal to ,
+          - Comparison operators (==, !=, ===, !== )  Practice
+      - name: 'Day-22: JavaScript Logical Operators'
+        subtopics:
+          - What are Logical Operators
+          - Logical And Operator (&&)
+          - Logical OR Operator (||)
+          - Logical NOT  Operator (!)
+      - name: >-
+          Day-23: JavaScript Strings, Numbers, Control Flow, and Conditional
+          Statements
+        subtopics:
+          - What is String in JS
+          - How to declare string (single quote, double qoute, backticks)
+          - How to concat string
+          - Template literals
+          - What is Dry Run
+          - Numbers (parseInt(), parseFloat(), toFixed())
+          - Dates and Console Object(log, warn, error)
+      - name: 'Day-24: Java Script Control Flow with Conditions'
+        subtopics:
+          - Decision making statement
+          - If- Else Statement
+          - "If…Else Else...if statement\_& Ternery"
+          - "Switch Case\_statement"
+          - "Practice\_with some examples"
+      - name: >-
+          Day-25: JavaScript Loops: Increment, Decrement, and For Loop with Dry
+          Run
+        subtopics:
+          - "Increment & Decrement\_operator"
+          - Examples of Prefix and Postfix
+          - What is Looping statement
+          - For loop (declaration, working)
+          - Practice and understand with dry run
+      - name: >-
+          Day-26: JavaScript Loops: While, Do-While, and Nested Loops with
+          Comparisons and Dry Run
+        subtopics:
+          - "What is While Loop\_& Do while Loop"
+          - Comparing for loop vs While Loop
+          - What is Nested Loop
+          - Comparing for loop vs Nested Loop
+          - Practice for loop with Dry Run
+      - name: 'Day-27: JavaScript Arrays: Storage, Manipulation, and Iteration'
+        subtopics:
+          - How do we store information?
+          - What is Array
+          - How to declare array
+          - Length of an array
+          - How to Add, Update, Remove Elements
+          - to add - push(), splice(),unshift()
+          - "Array with loop\_(For of and forEach)"
+          - to remove - pop(), shift(), splice()
+      - name: >-
+          Day-28: JavaScript Strings: Manipulation, Looping, and Comparison with
+          Arrays
+        subtopics:
+          - What is String
+          - Need of Strings
+          - Loop in Strings
+          - Array vs Strings
+          - Update & Remove char in String
+          - substring(), join(), split()
+          - Practice with some programs
+      - name: 'Day-29: JavaScript Objects: Structure, Loops, and Destructuring'
+        subtopics:
+          - Intro of Objects
+          - Array vs Objects
+          - Loops in Objects (For In)
+          - Destructuring
+          - Object Method (Object.key(), value(), entries())
+      - name: 'Day-30: JavaScript Functions: Parameters, Return Values, and Scope'
+        subtopics:
+          - What is Function
+          - "Using Function\_(Params & Args)"
+          - Function using return values
+          - Execution Context &  Local Scope vs Global Scope
+      - name: >-
+          Day31: JavaScript Inbuilt Functions: Arrow Functions, IIFE, Callbacks,
+          and Higher-Order Functions
+        subtopics:
+          - Define some Inbuilt function
+          - Arrow Function IIFE Functions
+          - CallBack functions
+          - Higher Order Functions
+      - name: >-
+          Day-32: Higher Order Function and Multi-Dimensional Arrays with
+          Practice
+        subtopics:
+          - "Higher Order function Map(), Filter(),\_ reduce()"
+          - What is Multi-dimensional array
+          - How to declare Multi-dimentional array
+          - Practice with some question
+      - name: 'Day-33: JavaScript DOM Manipulation with Events'
+        subtopics:
+          - What is Dom?
+          - "How JS add to HTML\_(Create,Remove Elements Traversing Dom)"
+          - What are events in JS
+          - Events(Keyboard Mouse and Onclick)
+      - name: >-
+          Day-34: JavaScript DOM Manipulation: Query Selector, Styling, and
+          Event Handling
+        subtopics:
+          - Query Selector
+          - Styling DOM elements in JS
+          - addEventListener()
+          - What is event.target
+      - name: >-
+          Day-35: JavaScript Forms and Dynamic DOM Manipulation with Project
+          Practice
+        subtopics:
+          - Forms in JS (events and validation)
+          - How to create elements
+          - DOM practice with project
+      - name: 'Day-36: JavaScript Local Storage and JSON: Working and Usage'
+        subtopics:
+          - What is Local-Storage
+          - How does LS work?
+          - What is JSON
+          - Why should we use JSON
+      - name: >-
+          Day-37: JavaScript Advanced Concepts: Constructor Functions,
+          Prototypal Inheritance, and Asynchronous Programming
+        subtopics:
+          - What are Constructor Functions?
+          - Difference between Constructor Functions and Regular Functions
+          - Creating Objects using new Keyword
+          - What is Prototype in JavaScript?
+          - Prototypal Inheritance
+          - What is Asynchronous Programming
+          - Intro to promises and Callback hell
+      - name: 'Day-38: JavaScript Asynchronous Programming: Understanding Promises'
+        subtopics:
+          - Understanding Promises
+          - What are promises
+          - Why Promises? (Problems with Callback Hell)
+          - >-
+            Three States of a Promise (Pending → Fulfilled (Resolved) or
+            Rejected)
+          - Creating a promise
+          - .then, .catch, and .finally method
+      - name: 'Day-39: JavaScript API Handling: Fetch, Promises, and Async/Await'
+        subtopics:
+          - What is an API? (Application Programming Interface)
+          - Using the Fetch API
+          - Basic fetch() syntax
+          - Introduction to Async/Await
+          - Why async/await was introduced
+          - Error Handling with Try/Catch
+      - name: 'Day-40: JavaScript Closures and ES6 Features'
+        subtopics:
+          - What is Closures
+          - Why are Closures Useful?
+          - Practical Use Cases of Closures
+          - "ES6 features\_(Classes & OOP in ES6)"
+      - name: 'Day-41: JavaScript API Integration: CRUD Operations and Pagination'
+        subtopics:
+          - What is CRUD?
+          - 'HTTP Methods Mapping:'
+          - Setting Up a Mock API(Using Postman Mock server)
+          - Methods (Get, Post, Put, Delete)
+          - Pagination
+      - name: 'Day-42: JavaScript Map, Set, and Temporal Dead Zone (TDZ)'
+        subtopics:
+          - What is a Map? (Key-Value pairs, ordered collection)
+          - Common Map Methods & Usage
+          - What is a Set? (Collection of unique values)
+          - Common Set Methods & Usage
+          - Temporal Dead Zone
+      - name: 'Day-43: JavaScript Web & Browser APIs: Closures and Promises'
+        subtopics:
+          - Introduction to Web APIs
+          - DOM, Fetch and Local storage
+          - Intro to browser APIs
+          - Notification, Location and Clipboard
+          - Project
+      - name: 'Day-44: Introduction to React: Components and JSX'
+        subtopics:
+          - What is React
+          - Why Use React
+          - Setting Up a React Project
+          - What is a Component?
+          - What is JSX?
+          - JSX Rules
+      - name: 'Day-45: React Hooks and State Management: useState and useEffect'
+        subtopics:
+          - What are hooks
+          - Why Hooks?
+          - State Management (useState hook)
+          - useEffect hook
+      - name: 'Day-46: React useEffect Hook: Usage and Hands-on Practice'
+        subtopics:
+          - What are Side Effects?
+          - useEffect Basics
+          - Dependency Array
+          - Prectice with code
+      - name: 'Day-47: React useRef Hook and Form Handling'
+        subtopics:
+          - What is useRef?
+          - Key Use Cases
+          - Forms in React
+          - Controlled Components
+          - Handling Submissions
+      - name: 'Day-48: React Routing: Introduction and React Router Usage'
+        subtopics:
+          - What is Routing
+          - Why react-router-dom
+          - Setup and basics
+          - Link tag and useNavigation hook
+          - Protected Routes
+      - name: 'Day-49: State Management, How to manage data across application'
+        subtopics:
+          - What is contextAPI
+          - How it works
+          - how to use useContext
+      - name: >-
+          Day-50: React API Handling with Axios: Installation and Project
+          Practice
+        subtopics:
+          - How to fetch APIs in react
+          - What is Axios
+          - Axios Installation
+          - Practice with small project
+      - name: 'Day-51: HTML Template Integration'
+        subtopics:
+          - How to Integrate a HTML Template
+          - Multi page template to components conversion
+          - Hands on practice
+      - name: >-
+          Day52: Version Control with Git and GitHub: Commands, Branching, and
+          Reverting Changes
+        subtopics:
+          - What is version control
+          - What is git and github
+          - Basic Git commands
+          - Git add, commit, Pull, clone, push
+          - Github Fork, Authentication, Branching strategy
+          - Git revert
+          - Project
+  - name: Database
+    main_topics:
+      - name: 'Day-53: Introduction to SQL & RDBMS'
+        subtopics:
+          - What is SQL?
+          - Importance of Databases
+          - Understanding RDBMS (MySQL, PostgreSQL, etc.)
+          - SQL vs NoSQL
+          - Basic SQL Structure & Syntax (Brief Overview)
+          - Setting up MySQL/PostgreSQL
+      - name: 'Day 54: SQL Basics & Commands'
+        subtopics:
+          - Introduction to SQL Commands (DDL, DML, DQL)
+          - Creating and managing databases
+          - Creating Tables and Understanding Data Types
+          - Basic Data Manipulation (DML Commands)
+          - Hands-on Practice
+      - name: 'Day 55: Retrieving Data with SELECT'
+        subtopics:
+          - Introduction to SELECT Statement
+          - Using WHERE Clause for Filtering Data
+          - Sorting Data with ORDER BY
+          - Using DISTINCT to Remove Duplicates
+          - Combining Conditions with AND, OR, and NOT
+          - Hands-on Practice
+      - name: 'Day 56: Modifying Data (DML - Data Manipulation Language)'
+        subtopics:
+          - Introduction to DML (Data Manipulation Language)
+          - Inserting Data into Tables (INSERT Command)
+          - Updating Existing Data (UPDATE Command)
+          - Deleting Data from Tables (DELETE Command)
+          - Difference Between DELETE, TRUNCATE, and DROP
+          - Hands-on Practice
+      - name: 'Day 57: SQL Constraints & Keys'
+        subtopics:
+          - Introduction to Constraints
+          - Types of SQL Constraints
+          - PRIMARY KEY
+          - FOREIGN KEY
+          - UNIQUE
+          - NOT NULL
+          - AUTO_INCREMENT
+          - CHECK
+          - DEFAULT
+          - SQL Keys and Their Types
+          - Applying Constraints While Creating and Modifying Tables
+          - Hands-on Practice
+      - name: 'Day 58: Joins in SQL'
+        subtopics:
+          - Introduction to Joins
+          - 'Types of Joins:'
+          - INNER JOIN
+          - LEFT JOIN
+          - RIGHT JOIN
+          - FULL OUTER JOIN
+          - Self Joins
+          - Hands-on Practice
+      - name: 'Day 59: Aggregate Functions & Grouping'
+        subtopics:
+          - Introduction to Aggregate Functions
+          - Common Aggregate Functions
+          - COUNT()
+          - SUM()
+          - AVG()
+          - MIN()
+          - MAX()
+          - Using Aggregate Functions with WHERE Clause
+          - Grouping Data Using GROUP BY
+          - Filtering Grouped Data Using HAVING Clause
+          - Using ORDER BY with Aggregate Functions
+          - Hands-on Practice
+      - name: 'Day 60: SQL Subqueries & Case Statements'
+        subtopics:
+          - Introduction to Subqueries
+          - Single-Row Subqueries
+          - Multi-Row Subqueries
+          - Correlated Subqueries
+          - Introduction to CASE Statement
+          - Using CASE for Conditional Output
+      - name: 'Day 61: SQL Views & Indexing'
+        subtopics:
+          - Introduction to SQL Views
+          - Creating and Using Views
+          - Updating Data in Views
+          - Deleting and Modifying Views
+          - Introduction to Indexing
+          - Creating and Managing Indexes
+      - name: 'Day 62: String & Date Functions'
+        subtopics:
+          - Introduction to String Functions
+          - Common String Functions
+          - UPPER()
+          - LOWER()
+          - LENGTH()
+          - SUBSTRING()
+          - 'Date functions:'
+          - NOW()
+          - CURDATE()
+          - DATEDIFF()
+      - name: 'Day 63: Stored Procedures & Functions'
+        subtopics:
+          - Introduction to Stored Procedures & Functions
+          - Creating Stored Procedures
+          - Using parameters in Stored Procedures
+          - SQL Functions vs Procedures
+      - name: 'Day 64: Triggers in SQL'
+        subtopics:
+          - What are Triggers?
+          - Types of Triggers in SQL
+          - BEFORE vs AFTER Triggers
+          - Creating Triggers for INSERT, UPDATE, DELETE
+      - name: 'Day 65: Transactions & ACID Properties'
+        subtopics:
+          - Introduction to Transactions
+          - Understanding ACID Properties
+          - SQL Transaction Control Commands
+          - Isolation Levels in Transactions
+          - Hands-on Practice
+          - Locking mechanisms in databases
+      - name: 'Day 66: Query Performance Optimization'
+        subtopics:
+          - Introduction to Query Optimization
+          - Why is query optimization important?
+          - Using Indexes Effectively
+          - Analyzing Query Performance Using EXPLAIN
+          - Using Proper Data Types & Normalization
+      - name: 'Day 67: Introduction to MongoDB & NoSQL'
+        subtopics:
+          - Introduction to NoSQL Databases
+          - Overview of MongoDB
+          - SQL vs NoSQL databases
+          - Features & advantages of MongoDB
+          - Installing MongoDB (Local & Cloud - MongoDB Atlas)
+          - Basic MongoDB commands
+      - name: 'Day 68: MongoDB Data Structure'
+        subtopics:
+          - Understanding Databases, Collections, and Documents
+          - JSON vs BSON format
+          - Creating and deleting databases
+          - Creating and managing collections
+      - name: 'Day 69: CRUD Operations in MongoDB'
+        subtopics:
+          - Introduction to CRUD Operations
+          - Creating (INSERT) Documents
+          - Retrieving (READ) Documents
+          - Updating Documents
+          - Deleting Documents
+          - Hands-on Practice
+      - name: 'Day 70: Querying Data'
+        subtopics:
+          - Introduction to Querying in MongoDB
+          - Retrieving Documents Using find()
+          - Using Comparison Operators in Queries
+          - $eq (Equal To),
+          - $ne (Not Equal To)
+          - $gt / $gte (Greater Than / Greater Than or Equal To)
+          - $lt / $lte (Less Than / Less Than or Equal To)
+          - Querying Arrays
+          - Sorting, Limiting, and Skipping Results
+      - name: 'Day 71: Indexing in MongoDB'
+        subtopics:
+          - What is an Index?
+          - Types of Indexes in MongoDB
+          - Creating & managing indexes (
+          - Single-field vs Compound indexes
+          - Performance improvement using indexes
+      - name: 'Day 72: Relationships & Schema Design'
+        subtopics:
+          - Introduction to Relationships in MongoDB
+          - One-to-One
+          - One-to-Many
+          - Many-to-Many
+          - Embedding vs Referencing documents
+          - Normalization vs Denormalization in MongoDB
+      - name: 'Day 73: Introduction to MongoDB Aggregation'
+        subtopics:
+          - What is Aggregation?
+          - Aggregation Pipeline Overview
+          - Basic Aggregation Stages
+          - Hands-on practice with aggregation queries
+          - EXAM FULL SYLLABUS - DATABASE
+  - name: Backend
+    main_topics:
+      - name: 'Day-74: Introduction to Backend-development'
+        subtopics:
+          - Understanding Backend Development
+          - Components of a Backend System
+          - Client-Server Architecture
+          - Technologies Used in Backend Development
+          - Understanding APIs and HTTP Basics
+      - name: 'Day-75: Introduction to Object-Oriented Programming (OOP)'
+        subtopics:
+          - What is Object-Oriented Programming (OOP)?
+          - >-
+            Object Oriented vs. Procedure Oriented, Object Oriented and Real
+            World
+          - Advantages of OOPS Why Object Oriented Programming
+          - Classes & Objects Concepts
+      - name: >-
+          Day-76: Introduction to Java: Features, Applications, and Development
+          Environment
+        subtopics:
+          - Introduction to JAVA What is Java? Why Java?
+          - >-
+            How Java can change the life? Features of Java and Applications Flow
+            Control Structures
+          - Setting Up the Java Development Environment
+          - >-
+            Execution Of Java program Byte code Understanding A First Java
+            Program
+          - Introduction of Eclipse and Net Beans
+      - name: 'day-77: Java Classes and Objects: Structure, Members, and Differences'
+        subtopics:
+          - Introduction of Class
+          - Role of Class in Object creations
+          - Class, Variables and Methods
+          - Difference between class, object&variables
+          - Static Member and non static members
+      - name: >-
+          Day-78: Java Data Types, Variables, and Operators: Fundamentals and
+          Classification
+        subtopics:
+          - What is data type?
+          - Primitive & Non-primitive Data types
+          - Variables in Java
+          - Types of Variables
+          - Variables, Identifiers and Literals
+          - Operators in Java
+      - name: >-
+          Day-79: Java Methods: Declaration, Calling, and Argument Passing
+          Techniques
+        subtopics:
+          - Introduction to Methods in Java
+          - Method Declaration, Definition & Calling
+          - Types of Methods
+          - >-
+            Argument Passing-Pass by Value and Pass by Reference [Object
+            Passing]
+          - Best Practices for Writing Methods
+      - name: >-
+          Day-80: Java Control Flow: Loops, Conditional Statements, and
+          Branching
+        subtopics:
+          - Introduction to Control Flow in Java
+          - Conditional Statements
+          - Looping Statements
+          - Branching Statements
+          - Nested Loops and Conditional Statements
+          - Best Practices for Writing Control Flow Statements
+      - name: >-
+          Day-81: Java Constructors and Memory Management: Types, Overloading,
+          and Garbage Collection
+        subtopics:
+          - Need of Constructor
+          - Types of Constructors
+          - Constructor Overloading
+          - Memory Management
+          - Garbage Collection in Java
+      - name: >-
+          Day-82: Java Arrays: Single-Dimensional, Multi-Dimensional, and
+          Methods
+        subtopics:
+          - Introduction to Arrays in Java
+          - Single-Dimensional Arrays
+          - Multi-Dimensional Arrays
+          - Array Methods and Operations
+          - Passing Arrays to Methods
+      - name: >-
+          Day 83: Java Strings: String Class, StringBuilder, StringBuffer, and
+          Memory Management
+        subtopics:
+          - Introduction to Strings in Java
+          - String Class and String Operations
+          - String Immutability and Memory Management
+          - StringBuilder Class
+          - StringBuffer Class
+          - Performance Considerations
+      - name: >-
+          Day-84: Java OOP Basics: Classes, Objects, Constructors, and the this
+          Keyword
+        subtopics:
+          - Introduction to Object-Oriented Programming (OOP) in Java
+          - Classes and Objects Recap
+          - Constructors in OOP
+          - The this Keyword in Java
+          - Best Practices in OOP Design
+      - name: >-
+          Day-85: Java Encapsulation: Data Hiding, Access Modifiers, and
+          Abstraction
+        subtopics:
+          - Introduction to Encapsulation
+          - Data Hiding in Java
+          - Access Modifiers in Java
+          - Encapsulation vs. Abstraction
+      - name: 'Day-86: Java Encapsulation: Principles, Getters, and Setters'
+        subtopics:
+          - Encapsulation in java
+          - Implementing Encapsulation in Java
+          - getter and setter methods
+          - Advantages of Using Getters and Setters
+      - name: 'Day-87: Java Inheritance: Concepts, Types, and Benefits'
+        subtopics:
+          - What is Inheritance?
+          - Why use Inheritance?
+          - Inheritance in Java
+          - Types Of Inheritance
+          - Benefits of Inheritance
+      - name: 'Day-88: Java Inheritance: Extended Concepts and the super Keyword'
+        subtopics:
+          - Using the extends Keyword
+          - super keyword
+          - Best Practices for Using Inheritance
+      - name: 'Day-89: Java Polymorphism: Compile-Time vs. Runtime Polymorphism'
+        subtopics:
+          - What is Polymorphism
+          - types of polymorphism
+          - Compile-Time Polymorphism (Method Overloading)
+          - Runtime Polymorphism (Method Overriding)
+          - Difference Between Compile-Time and Runtime Polymorphism
+      - name: 'Day-90: Java Abstraction: Concept and Abstract Classes'
+        subtopics:
+          - What is abstraction
+          - What is abstract class
+          - Implementing Abstraction Using Abstract Classes
+          - Rules for Abstract Classes and Methods
+      - name: 'Day-91: Java Interfaces: Definition and Implementation'
+        subtopics:
+          - what is interface
+          - Declaring an Interface
+          - Implementing an Interface
+          - Default and Static Methods in Interfaces (Java 8+)
+      - name: >-
+          Day-92: Java Packages: Types, Naming Conventions, and Importing
+          Built-in Packages
+        subtopics:
+          - what is a package
+          - Types of package
+          - Creating and Using Packages
+          - Importing Packages in Java
+          - Naming Conventions for Packages
+      - name: >-
+          Day-93: Java I/O and File Handling: Streams, Reading/Writing, and File
+          Handling Classes
+        subtopics:
+          - What is a Java I/O and Stream
+          - Understanding Java Streams
+          - File Handling in Java
+          - Reading and Writing to Files
+          - Handling Binary Data
+      - name: >-
+          Day-94: Java Exception Handling: Types, Keywords, and Custom
+          Exceptions
+        subtopics:
+          - Introduction to Exception Handling
+          - What is Java Exception,
+          - Error vs Exception
+          - Types of Exceptions
+          - Checked & Unchecked Exception
+          - Try, Catch & Finally Throw & Throws Keywords
+          - Custom or User Defined Exception
+      - name: 'Day-95: Java Wrapper Classes: Auto-Boxing and Unboxing'
+        subtopics:
+          - Wrapper classes
+          - Auto-Boxing in Java
+          - Unboxing in Java
+          - Methods in Wrapper Classes
+      - name: 'Day-96: Java Multithreading:Thread class and Runnable interface'
+        subtopics:
+          - Introduction to Multithreading
+          - Creating Threads in Java
+          - Thread Methods and Control
+          - Difference Between Thread Class and Runnable Interface
+      - name: 'Day-97: Java Object Class Methods and Inner Classes'
+        subtopics:
+          - Introduction to the Object Class
+          - Commonly Used Methods of Object Class
+          - Introduction to Inner Classes
+          - Types of Inner Classes
+      - name: >-
+          Day-98: Java Collection Framework: Data Structures and Their
+          Implementations
+        subtopics:
+          - What is the Java Collection Framework
+          - Hierarchy of Collection Framework
+          - Array, LinkedList, Stack, Queue
+      - name: 'Day-99: Java Collection Framework: List Interface and Implementations'
+        subtopics:
+          - Introduction to the List Interface
+          - Common Methods of the List Interface
+          - Implementations of List
+          - Iterating Over Lists
+      - name: 'Day-100: Java Collection Framework: Set Interface and Implementations'
+        subtopics:
+          - Introduction to the Set Interface
+          - Common Methods of the Set Interface
+          - Implementations of Set
+          - Iterating Over a Set
+      - name: 'Day-101: Java Collection Framework: Map Interface and Implementations'
+        subtopics:
+          - Introduction to the Map Interface
+          - Common Methods of the Map Interface
+          - Implementations of Map
+          - Iterating Over a Map
+      - name: 'Day-102: Database Fundamentals and JDBC: Setup and Connection in Java'
+        subtopics:
+          - Database Fundamentals
+          - Understanding JDBC (Java Database Connectivity)
+          - JDBC Setup and Connection
+          - Establishing a Database Connection
+      - name: 'Day-103: Java Lambda Expressions and Functional Interfaces'
+        subtopics:
+          - Introduction to Functional Interfaces
+          - Introduction to Lambda Expressions
+          - Syntax and Usage of Lambda Expressions
+      - name: >-
+          Day-104: Introduction to Spring Boot and Maven: Building Modern Java
+          Applications
+        subtopics:
+          - What is Spring Boot
+          - Why Use Spring Boot
+          - Spring Boot Architecture
+          - What is Maven
+          - Maven Project Structure
+          - Creating a Spring Boot Application Using Maven
+      - name: 'Day-105: Maven Lifecycle and Configuration: Understanding pom.xml'
+        subtopics:
+          - Introduction to Maven Lifecycle
+          - Maven Build Phases (Default Lifecycle)
+          - Understanding pom.xml
+          - Dependency Management in Maven
+      - name: >-
+          Day-106: Spring Boot Features, Advantages, and Project Setup with
+          Spring Initializr
+        subtopics:
+          - Key Features of Spring Boot
+          - Advantages of Using Spring Boot
+          - What is Spring Initializr
+          - Setting Up a Simple Spring Boot Application
+          - Running the Spring Boot Application
+          - Exploring the Core Files in a Spring Boot Project
+      - name: >-
+          Day-107: Spring Boot Annotations and Dependency Injection: @Component,
+          @Service, @Autowired, @Controller
+        subtopics:
+          - What Are Spring Boot Annotations
+          - Types of Spring Boot Annotations
+          - Understanding Dependency Injection (DI)
+          - Important Annotations in Spring Boot
+          - >-
+            (@Controller, @Service, @Repository, @Controller vs.
+            @RestController, @Autowired )
+      - name: >-
+          Day-108: Building REST APIs with Spring Boot: @RestController,
+          @RequestMapping, @GetMapping, @PostMapping
+        subtopics:
+          - What is a REST API
+          - Why Use Spring Boot for REST APIs
+          - Important Annotations for REST APIs
+          - Creating a Simple REST API
+          - Handling Request and Response Data
+      - name: >-
+          Day-109: Integrating Spring Data JPA with Spring Boot for Database
+          Operations
+        subtopics:
+          - Introduction to Spring Data JPA
+          - Setting Up Spring Data JPA in Spring Boot
+          - Creating Entity and Repository
+          - Performing Database Operations
+      - name: 'Day-110: CRUD Operations with REST API in Spring Boot'
+        subtopics:
+          - Overview of CRUD in REST API
+          - Setting Up the Project
+          - Implementing CRUD Operations
+          - Handling Edge Cases & Best Practices
+      - name: >-
+          Day-111: Introduction to Spring Security: Authentication and
+          Authorization in Spring Boot
+        subtopics:
+          - Understanding Spring Security
+          - Setting Up Spring Security in a Spring Boot Project
+          - Configuring Authentication in Spring Security
+          - Implementing Authorization
+          - Securing REST APIs
+      - name: >-
+          Day-112: Spring Boot Authentication and Authorization: Implementing
+          Security in Web Applications
+        subtopics:
+          - Understanding Authentication and Authorization in Spring Boot
+          - Setting Up Spring Security in a Spring Boot Project
+          - Implementing Custom Authentication
+          - Implementing Role-Based Authorization
+          - Securing REST APIs with Spring Security
+      - name: >-
+          Day-113: Implementing JWT (JSON Web Token) Authentication in Spring
+          Boot
+        subtopics:
+          - Understanding JWT Authentication
+          - Setting Up Spring Security for JWT Authentication
+          - Implementing JWT Token Generation & Validation
+          - Securing REST APIs with JWT
+          - Project
+          - FULL SYLLABUS - BACKEND
+  - name: DevOps
+    main_topics:
+      - name: 'Day 115: Introduction to AIFS-CDEC course'
+        subtopics:
+          - What is AIFS-CDEC?
+          - How it is different from other Full Stack Development Course?
+          - How IT Company Works
+          - What is an Application?
+          - Desktop App vs Mobile App vs Web App
+          - Monolithic vs MicroServices
+          - Developers vs Testers vs DevOps
+          - How Applications are deployed - Traditional Method
+          - >-
+            Explain the curriculum as: We Are starting the course with the
+            understanding of how applications are deployed, after that we will
+            see how these applications will be developed
+      - name: >-
+          Day 116: Introduction to Virtualization and Cloud Computing: Models
+          and AWS Account Setup
+        subtopics:
+          - Introduction to Virtualization
+          - Virtualization vs Cloud
+          - Cloud Models (IAAS, PAAS, SAAS)
+          - AWS Account creation
+      - name: 'Day-117: Introduction to AWS: EC2, S3, RDS, and Remote Access via SSH'
+        subtopics:
+          - Introduction to AWS Dashboard
+          - Region vs Availability Zone (AZ)
+          - Introduction to EC2, S3, RDS Service
+          - Create first Instance of Ubuntu
+          - Remote access of Linux using SSH
+      - name: >-
+          Day-118: Introduction to Linux: Basic Commands, Package Management,
+          and File Operations
+        subtopics:
+          - What is Linux?
+          - >-
+            Basic commands / Package management: ls, cd, cp, rm -f, vim, cat,
+            apt
+          - 'Directory Hierarchy: / etc, dev, var, home, root'
+          - Working with Files and Directories
+          - Copy, move, rename in linux
+          - Vim editor
+      - name: >-
+          Day-119: Hosting and Database Management on AWS: EC2 and S3 for
+          Backend and Static Websites
+        subtopics:
+          - Create and Access Database
+          - Host Backend on ec2
+          - host static website on s3
+          - Ask students to deploy static application on s3 bucket.
+      - name: >-
+          Day-120: Introduction to SDLC, DevOps, and Containerization with
+          Docker
+        subtopics:
+          - SDLC
+          - Introduction to DevOps
+          - Difference between Monolithic and MicroServices
+          - >-
+            Difference between Traditional, Virtualization, and Containerization
+            Deployment
+          - Intriduction to Containerization, Container, Image
+          - Introduction to Docker
+          - Install Docker engine
+          - Run first container
+      - name: >-
+          Day-121: Managing Docker Containers: Essential Commands and Container
+          Interactions
+        subtopics:
+          - Explain docker container commands
+          - Essential Commands for Container Management using Docker
+          - Experiment with Docker Containers - Create, Start, Stop, and Run
+          - Expose applications to the World
+          - Interact with Containers using 'exec'
+          - Inspects and Troubleshooting Steps in Docker
+          - >-
+            docker run (-d, -p, -P, -e, --name), create, start, stop, rm, ps
+            (-aq), exec (-it), inspect, cp, logs, stats
+      - name: >-
+          Day-122: Working with Docker Images and Docker Hub: Commands and Image
+          Management
+        subtopics:
+          - Introduction to docker images and its naming
+          - Introduction to Dockerhub
+          - docker image commands
+          - docker pull, login, push
+          - docker commit, tag, image rm, rmi, save, load, prune
+      - name: >-
+          Day-123: Dockerfile and Application Deployment: Building, Pushing, and
+          Networking with Docker
+        subtopics:
+          - Introduction to Dockerfile
+          - >-
+            FROM, LABEL, RUN, CMD, ENTRYPOINT, ENV, ARG, COPY, ADD, EXPOSE,
+            USER, WORKDIR
+          - Docker build, push, pull
+          - Create docker file for frontend and backend application
+          - Deploy three tier application deployment example
+          - Introduction to Docker Network and Docker Volume
+      - name: >-
+          Day-124: Introduction to Kubernetes: Architecture, Pod Lifecycle, and
+          Cluster Creation Methods
+        subtopics:
+          - Intriduction to Kubernetes.
+          - Why we need orchestration tool
+          - Why kubernetes
+          - Architecture of kubernetes
+          - Lifecycle of the pods
+          - >-
+            Enlist Cluster creation methods (minikube, kind, kubeadm, EKS, GKE,
+            AKS, etc)
+      - name: 'Day-125: Introduction to Kubernetes Objects: Pods and Services'
+        subtopics:
+          - Create cluster using EKS
+          - Install kubectl, access EKS cluster
+          - Introduction to Pods, and service
+          - Main Container and Side Car Containers
+          - Kubernetes Objects
+      - name: >-
+          Day-126: Kubernetes YAML Manifest Files: Pods, Services, Namespaces,
+          Deployments, and StatefulSets
+        subtopics:
+          - Introduction to YAML scripts
+          - Write manifest files for Pods and Services
+          - Explain concept of Namespace, Deployments, StatefulSet
+      - name: >-
+          Day-127: Kubernetes Configuration and Storage: ConfigMaps, Secrets,
+          Persistent Volumes, and AutoScaling
+        subtopics:
+          - Store variables using ConfigMap and Secrets
+          - Achive Persistent Storage using PV and PVC, Dynamic Volume using EBS
+          - Types of AutoScaling in k8s
+          - Write Manifests for HPA
+      - name: >-
+          Day-128: Kubernetes Ingress: Nginx Ingress Controller and Routing
+          Techniques
+        subtopics:
+          - Introduction to Ingress
+          - Install Nginx Ingress Controller using Menifests
+          - >-
+            Write Manifest for Ingress (Path based routing and Name based
+            routing)
+      - name: >-
+          Day-129: Deploying a Three-Tier Application on Kubernetes: Manifests
+          for HPA, Deployment, Service, and Ingress
+        subtopics:
+          - >-
+            Write manifests to deploy three tier application: HPA, Deployment,
+            Service, Ingress
+      - name: 'Day-130: Introduction to Continuous Integration (CI) and Jenkins Setup'
+        subtopics:
+          - Introduction to CI process
+          - Introduction to Jenkins
+          - Install Jenkins server
+      - name: >-
+          Day-131: Jenkins Pipeline: Installation, Configuration, and Building a
+          Basic 4-Stage Pipeline
+        subtopics:
+          - Install Pipeline plugin
+          - Write a basic 4 stage pipeline
+          - Add Pull stage, build, deploy stage
+      - name: >-
+          Day-132: Integrating SonarQube with Jenkins for Code Quality Analysis
+          and Pipeline Automation
+        subtopics:
+          - Explain Sonarqube
+          - Explain QA Result (bugs, vulnerabilities, code smell, etc)
+          - Create sonarqube server
+          - Scan Project using maven
+          - Create Quality Gate to explain code QA Failure
+          - Inegrate sonarqube with Jenkins
+          - Add Test stage
+          - create webhook with Sonarqube for qualigate wait
+      - name: >-
+          Day-133: Deploying a Three-Tier Application on EKS using Jenkins
+          Pipeline
+        subtopics:
+          - Deploy three tier application using pipeline on eks
+      - name: 'Day-134: Serverless Computing with AWS Lambda: Introduction and Demo'
+        subtopics:
+          - Serverless Computing with AWS Lambda
+          - Introduction to Lambda
+          - Demo on Lambda
+          - FULL SYLLABUS DevOps
