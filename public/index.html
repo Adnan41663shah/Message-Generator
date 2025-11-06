@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/assets/styles.css" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"/>
     <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
       :root {
         --brand: #1f2937;
         --accent: #2563eb;
@@ -113,10 +115,10 @@
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-6">
-      <div class="grid grid-cols-1 lg:grid-cols-2 items-start gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start gap-6">
         <section
           id="sectionTraining"
-          class="form-grad rounded-xl shadow p-4 sm:p-6"
+          class="form-grad rounded-xl shadow p-4 sm:p-6 lg:col-span-2"
         >
           <h2 class="text-lg font-semibold mb-4">Training Details</h2>
           <form id="trainingForm" class="space-y-4">
@@ -297,7 +299,7 @@
 
         <section
           id="sectionCancel"
-          class="form-grad rounded-xl shadow p-4 sm:p-6 hidden"
+          class="form-grad rounded-xl shadow p-4 sm:p-6 hidden lg:col-span-2"
         >
           <h2 class="text-lg font-semibold mb-4">Batch Cancellation</h2>
           <form id="cancelForm" class="space-y-4">
@@ -332,19 +334,24 @@
               </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-sm font-medium mb-1"
-                  >Alternate Trainer (optional)</label
-                >
-                <input
-                  type="text"
-                  id="c_alt"
-                  class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
-                  placeholder="If alternate trainer available"
-                />
-              </div>
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Number of affected batches<span class="text-red-500"> *</span></label
+              >
+              <input
+                type="number"
+                id="c_count"
+                min="1"
+                value="1"
+                required
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                placeholder="e.g. 2"
+              />
+              <p class="mt-1 text-xs text-red-600 hidden" id="c_err_count"></p>
             </div>
+
+            <div id="c_affected" class="space-y-3"></div>
+            <p class="mt-1 text-xs text-red-600 hidden" id="c_err_affected"></p>
 
             <div>
               <label class="block text-sm font-medium mb-1"
@@ -359,21 +366,6 @@
               ></textarea>
               <p class="mt-1 text-xs text-red-600 hidden" id="c_err_reason"></p>
             </div>
-
-            <div>
-              <label class="block text-sm font-medium mb-1"
-                >Number of affected batches (optional)</label
-              >
-              <input
-                type="number"
-                id="c_count"
-                min="0"
-                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
-                placeholder="e.g. 2"
-              />
-            </div>
-
-            <div id="c_affected" class="space-y-3"></div>
 
             <div class="flex items-center gap-3 pt-2">
               <button id="c_btnGenerate" type="button" class="btn-grad">
@@ -398,11 +390,11 @@
             <button id="btnCopy" class="btn-grad btn-copy text-xs sm:text-sm">Copy Message</button>
           </div>
 
-          <div id="panelGenerated" class="mt-4">
+          <div id="panelGenerated" class="mt-4 lg:w-72">
             <div
               id="preview"
               class="text-sm lg:text-base leading-snug bg-gray-50 p-3 lg:p-4 rounded-lg min-h-[180px] transition-opacity duration-300"
-            >
+              >
               Your formatted message will appear here...
             </div>
           </div>

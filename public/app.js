@@ -24,13 +24,14 @@ const btnNavCancel = document.getElementById('btnNavCancel');
 const cancelForm = document.getElementById('cancelForm');
 const c_date = document.getElementById('c_date');
 const c_instructor = document.getElementById('c_instructor');
-const c_alt = document.getElementById('c_alt');
 const c_reason = document.getElementById('c_reason');
 const c_count = document.getElementById('c_count');
 const c_affected = document.getElementById('c_affected');
 const c_err_date = document.getElementById('c_err_date');
 const c_err_instructor = document.getElementById('c_err_instructor');
 const c_err_reason = document.getElementById('c_err_reason');
+const c_err_count = document.getElementById('c_err_count');
+const c_err_affected = document.getElementById('c_err_affected');
 const c_btnGenerate = document.getElementById('c_btnGenerate');
 const c_btnReset = document.getElementById('c_btnReset');
 
@@ -91,24 +92,46 @@ function renderAffectedFields() {
   if (!c_affected) return;
   c_affected.innerHTML = '';
   const n = Math.max(0, Number(c_count?.value || 0));
+
   for (let i = 0; i < n; i++) {
     const wrapper = document.createElement('div');
-    wrapper.className = 'grid grid-cols-1 sm:grid-cols-3 gap-3';
+
+    // One single horizontal line per batch (scrolls horizontally on small screens)
+    wrapper.className = 'flex items-end gap-3 overflow-x-auto py-1 no-scrollbar';
+
     const nameId = `c_aff_name_${i}`;
     const timeId = `c_aff_time_${i}`;
     const modeId = `c_aff_mode_${i}`;
+
     wrapper.innerHTML = `
-      <div>
-        <label class="block text-sm font-medium mb-1">Affected Batch Name ${i + 1}</label>
-        <input type="text" id="${nameId}" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Batch name">
+      <div class="min-w-[260px]">
+        <label class="block text-xs font-medium mb-1"><b>Affected Batch Name ${i + 1}</b></label>
+        <input
+          type="text"
+          id="${nameId}"
+          class="w-[260px] border rounded-lg px-4 py-1.5 text-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+          placeholder="Batch name"
+          ${i === 0 ? 'required' : ''}
+        >
       </div>
-      <div>
-        <label class="block text-sm font-medium mb-1">Timing ${i + 1}</label>
-        <input type="time" id="${timeId}" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+
+      <div class="min-w-[160px]">
+        <label class="block text-xs font-medium mb-1"><b>Timing ${i + 1}</b></label>
+        <input
+          type="time"
+          id="${timeId}"
+          class="w-[160px] border rounded-lg px-2 py-1.5 text-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+          ${i === 0 ? 'required' : ''}
+        >
       </div>
-      <div>
-        <label class="block text-sm font-medium mb-1">Training Mode ${i + 1}</label>
-        <select id="${modeId}" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+
+      <div class="min-w-[180px]">
+        <label class="block text-xs font-medium mb-1"><b>Training Mode ${i + 1}</b></label>
+        <select
+          id="${modeId}"
+          class="w-[180px] border rounded-lg px-2 py-1.5 text-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+          ${i === 0 ? 'required' : ''}
+        >
           <option value="">Select mode</option>
           <option>Online</option>
           <option>Offline</option>
@@ -119,19 +142,73 @@ function renderAffectedFields() {
     c_affected.appendChild(wrapper);
   }
 }
+
 c_count?.addEventListener('input', renderAffectedFields);
 
 function clearCancelErrors() {
-  [c_err_date, c_err_instructor, c_err_reason].forEach(el => { el && (el.textContent = ''); el && el.classList.add('hidden'); });
-  [c_date, c_instructor, c_reason].forEach(inp => inp?.classList.remove('border-red-500'));
+  [c_err_date, c_err_instructor, c_err_reason, c_err_count, c_err_affected]
+    .forEach(el => { el && (el.textContent = ''); el && el.classList.add('hidden'); });
+  [c_date, c_instructor, c_reason, c_count]
+    .forEach(inp => inp?.classList.remove('border-red-500'));
 }
 
 function validateCancelForm() {
   clearCancelErrors();
   let ok = true;
-  if (!c_date?.value) { if (c_err_date) { c_err_date.textContent = 'Date is required.'; c_err_date.classList.remove('hidden'); } c_date?.classList.add('border-red-500'); ok = false; }
-  if (!c_instructor?.value.trim()) { if (c_err_instructor) { c_err_instructor.textContent = 'Instructor name is required.'; c_err_instructor.classList.remove('hidden'); } c_instructor?.classList.add('border-red-500'); ok = false; }
-  if (!c_reason?.value.trim()) { if (c_err_reason) { c_err_reason.textContent = 'Cancellation reason is required.'; c_err_reason.classList.remove('hidden'); } c_reason?.classList.add('border-red-500'); ok = false; }
+
+  if (!c_date?.value) {
+    if (c_err_date) { c_err_date.textContent = 'Date is required.'; c_err_date.classList.remove('hidden'); }
+    c_date?.classList.add('border-red-500'); ok = false;
+  }
+  if (!c_instructor?.value.trim()) {
+    if (c_err_instructor) { c_err_instructor.textContent = 'Instructor name is required.'; c_err_instructor.classList.remove('hidden'); }
+    c_instructor?.classList.add('border-red-500'); ok = false;
+  }
+  if (!c_reason?.value.trim()) {
+    if (c_err_reason) { c_err_reason.textContent = 'Cancellation reason is required.'; c_err_reason.classList.remove('hidden'); }
+    c_reason?.classList.add('border-red-500'); ok = false;
+  }
+
+  const n = Number(c_count?.value || 0);
+  if (!Number.isFinite(n) || n < 1) {
+    if (c_err_count) { c_err_count.textContent = 'Enter at least 1 affected batch.'; c_err_count.classList.remove('hidden'); }
+    c_count?.classList.add('border-red-500'); ok = false;
+  }
+
+  // At least one row must be filled (your original rule)
+  let anyFilled = false;
+  for (let i = 0; i < Math.max(0, n); i++) {
+    const name = document.getElementById(`c_aff_name_${i}`)?.value?.trim() || '';
+    const time = document.getElementById(`c_aff_time_${i}`)?.value?.trim() || '';
+    const mode = document.getElementById(`c_aff_mode_${i}`)?.value?.trim() || '';
+    if (name || time || mode) { anyFilled = true; break; }
+  }
+  if (!anyFilled) {
+    if (c_err_affected) {
+      c_err_affected.textContent = 'Provide details for at least one affected batch.';
+      c_err_affected.classList.remove('hidden');
+    }
+    ok = false;
+  }
+
+  // NEW: Enforce row 1 fully complete (mandatory)
+  if (n >= 1) {
+    const name0 = document.getElementById('c_aff_name_0')?.value?.trim() || '';
+    const time0 = document.getElementById('c_aff_time_0')?.value?.trim() || '';
+    const mode0 = document.getElementById('c_aff_mode_0')?.value?.trim() || '';
+    if (!name0 || !time0 || !mode0) {
+      if (c_err_affected) {
+        c_err_affected.textContent = 'Batch 1: name, time, and mode are required.';
+        c_err_affected.classList.remove('hidden');
+      }
+      ['c_aff_name_0','c_aff_time_0','c_aff_mode_0'].forEach(id => {
+        const el = document.getElementById(id);
+        el?.classList.add('border-red-500');
+      });
+      ok = false;
+    }
+  }
+
   return { ok };
 }
 
@@ -139,7 +216,6 @@ function buildCancelMessage() {
   const date = c_date?.value || '';
   const instructorName = toTitleCase(c_instructor?.value || '');
   const reason = (c_reason?.value || '').trim();
-  const alt = (c_alt?.value || '').trim();
   const countVal = Math.max(0, Number(c_count?.value || 0));
 
   const affected = [];
@@ -161,7 +237,6 @@ function buildCancelMessage() {
   lines.push(`📅 Cancellation date: ${date}`);
   lines.push(`👨‍🏫 Instructor name: ${instructorName}`);
   lines.push(`📝 Cancellation Reason: ${reason}`);
-  if (alt) lines.push(`👥 Alternate Trainer Available: ${alt}`);
   lines.push(`🔢 Number of affected batches: ${numberAffected}`);
   lines.push('');
   lines.push('📦 Affected Batches:');
@@ -177,7 +252,6 @@ function buildCancelMessage() {
       <div>📅 <strong>Cancellation date:</strong> ${escapeHtml(date)}</div>
       <div>👨‍🏫 <strong>Instructor name:</strong> ${escapeHtml(instructorName)}</div>
       <div>📝 <strong>Cancellation Reason:</strong> ${escapeHtml(reason)}</div>
-      ${alt ? `<div>👥 <strong>Alternate Trainer Available:</strong> ${escapeHtml(alt)}</div>` : ''}
       <div>🔢 <strong>Number of affected batches:</strong> ${numberAffected}</div>
       <div class="pt-1">📦 <strong>Affected Batches:</strong></div>
       <div>${affected.map((b, i) => `<div class="pl-1"><div>Batch ${i + 1}: ${escapeHtml(b.name || '-')}</div><div class=\"pl-3\">• Timing: ${escapeHtml(b.time || '-')}</div><div class=\"pl-3\">• Mode: ${escapeHtml(b.mode || '-')}</div></div>`).join('')}</div>
@@ -405,6 +479,7 @@ c_btnReset?.addEventListener('click', () => {
   if (preview) preview.textContent = 'Your formatted message will appear here...';
   lastGeneratedText = '';
   clearCancelErrors();
+  if (c_count) { c_count.value = '1'; renderAffectedFields(); }
 });
 
 // Init
@@ -412,6 +487,12 @@ loadCourses().then(() => {
   selectedCourseSlug = course?.value || '';
   return loadSyllabus(selectedCourseSlug);
 });
+
+// Ensure at least one affected batch by default
+if (c_count) {
+  if (!c_count.value) c_count.value = '1';
+  renderAffectedFields();
+}
 
 // WhatsApp integration
 const btnWhatsApp = document.getElementById('btnWhatsApp');
