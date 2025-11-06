@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="cbLinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F76E33"/>
+      <stop offset="100%" stop-color="#FA932F"/>
+    </linearGradient>
+  </defs>
+  <rect x="4.5" y="12.25" width="14" height="7.5" rx="3.75" transform="rotate(-30 11.5 16)" fill="none" stroke="url(#cbLinkGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="13.5" y="12.25" width="14" height="7.5" rx="3.75" transform="rotate(-30 20.5 16)" fill="none" stroke="url(#cbLinkGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
