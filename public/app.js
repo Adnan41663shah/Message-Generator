@@ -24,9 +24,6 @@ const btnNavCancel = document.getElementById('btnNavCancel');
 const cancelForm = document.getElementById('cancelForm');
 const c_date = document.getElementById('c_date');
 const c_instructor = document.getElementById('c_instructor');
-const c_batch = document.getElementById('c_batch');
-const c_time = document.getElementById('c_time');
-const c_mode = document.getElementById('c_mode');
 const c_alt = document.getElementById('c_alt');
 const c_reason = document.getElementById('c_reason');
 const c_count = document.getElementById('c_count');
@@ -96,9 +93,10 @@ function renderAffectedFields() {
   const n = Math.max(0, Number(c_count?.value || 0));
   for (let i = 0; i < n; i++) {
     const wrapper = document.createElement('div');
-    wrapper.className = 'grid grid-cols-1 sm:grid-cols-2 gap-3';
+    wrapper.className = 'grid grid-cols-1 sm:grid-cols-3 gap-3';
     const nameId = `c_aff_name_${i}`;
     const timeId = `c_aff_time_${i}`;
+    const modeId = `c_aff_mode_${i}`;
     wrapper.innerHTML = `
       <div>
         <label class="block text-sm font-medium mb-1">Affected Batch Name ${i + 1}</label>
@@ -107,6 +105,15 @@ function renderAffectedFields() {
       <div>
         <label class="block text-sm font-medium mb-1">Timing ${i + 1}</label>
         <input type="time" id="${timeId}" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">Training Mode ${i + 1}</label>
+        <select id="${modeId}" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+          <option value="">Select mode</option>
+          <option>Online</option>
+          <option>Offline</option>
+          <option>Hybrid</option>
+        </select>
       </div>
     `;
     c_affected.appendChild(wrapper);
@@ -132,19 +139,18 @@ function buildCancelMessage() {
   const date = c_date?.value || '';
   const instructorName = toTitleCase(c_instructor?.value || '');
   const reason = (c_reason?.value || '').trim();
-  const baseName = (c_batch?.value || '').trim();
-  const baseTime = (c_time?.value || '').trim();
   const alt = (c_alt?.value || '').trim();
   const countVal = Math.max(0, Number(c_count?.value || 0));
 
   const affected = [];
-  if (baseName || baseTime) affected.push({ name: baseName, time: baseTime });
   for (let i = 0; i < countVal; i++) {
     const nameEl = document.getElementById(`c_aff_name_${i}`);
     const timeEl = document.getElementById(`c_aff_time_${i}`);
+    const modeEl = document.getElementById(`c_aff_mode_${i}`);
     const name = nameEl?.value?.trim() || '';
     const time = timeEl?.value?.trim() || '';
-    if (name || time) affected.push({ name, time });
+    const mode = modeEl?.value?.trim() || '';
+    if (name || time || mode) affected.push({ name, time, mode });
   }
 
   const numberAffected = affected.length;
@@ -162,6 +168,7 @@ function buildCancelMessage() {
   affected.forEach((b, idx) => {
     lines.push(`Batch ${idx + 1}: ${b.name || '-'}`);
     lines.push(`  • Timing: ${b.time || '-'}`);
+    lines.push(`  • Mode: ${b.mode || '-'}`);
   });
 
   const html = `
@@ -173,7 +180,7 @@ function buildCancelMessage() {
       ${alt ? `<div>👥 <strong>Alternate Trainer Available:</strong> ${escapeHtml(alt)}</div>` : ''}
       <div>🔢 <strong>Number of affected batches:</strong> ${numberAffected}</div>
       <div class="pt-1">📦 <strong>Affected Batches:</strong></div>
-      <div>${affected.map((b, i) => `<div class="pl-1"><div>Batch ${i + 1}: ${escapeHtml(b.name || '-')}</div><div class="pl-3">• Timing: ${escapeHtml(b.time || '-')}</div></div>`).join('')}</div>
+      <div>${affected.map((b, i) => `<div class="pl-1"><div>Batch ${i + 1}: ${escapeHtml(b.name || '-')}</div><div class=\"pl-3\">• Timing: ${escapeHtml(b.time || '-')}</div><div class=\"pl-3\">• Mode: ${escapeHtml(b.mode || '-')}</div></div>`).join('')}</div>
     </div>
   `;
 

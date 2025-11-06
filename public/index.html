@@ -1,218 +1,452 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Report Generator</title>
-  <link rel="stylesheet" href="/assets/styles.css" />
-  <style>
-    :root { --brand:#1f2937; --accent:#2563eb; --muted:#6b7280; --danger:#dc2626; }
-    .btn-nav{ padding:.375rem .75rem; border:1px solid rgba(255,255,255,.2); border-radius:9999px; transition:all .2s ease; }
-    .btn-nav.active{ outline:2px solid rgba(255,255,255,.6); box-shadow:0 1px 3px rgba(0,0,0,.1); }
-    .btn-grad{ display:inline-flex; align-items:center; justify-content:center; gap:.375rem; background:linear-gradient(90deg,#f97316,#ec4899,#8b5cf6); background-size:200% 200%; color:#fff; text-transform:uppercase; letter-spacing:.02em; padding:.5rem 1rem; border-radius:9999px; transition:filter .2s ease, box-shadow .2s ease, background-position .6s ease; }
-    .btn-grad:hover{ filter:brightness(1.05); box-shadow:0 8px 20px rgba(139,92,246,.35); background-position:100% 0; }
-    .btn-cancel{ background:#1515ff; color:#fff; padding:.5rem 1rem; border-radius:.5rem; transition:background-color .2s ease, box-shadow .2s ease; }
-    .btn-cancel:hover{ background:#6d28d9; box-shadow:0 4px 6px rgba(0,0,0,.1); }
-    .nav-grad{ background:linear-gradient(90deg,#f97316,#ec4899,#8b5cf6); }
-    .form-grad{ background:linear-gradient(90deg,#ffedd5,#e7e0ff); }
-    .btn-whatsapp{ display:inline-flex; align-items:center; gap:.375rem; background:#25D366; color:#fff; padding:.5rem 1rem; border-radius:9999px; transition:filter .2s ease, box-shadow .2s ease; }
-    .btn-whatsapp:hover{ filter:brightness(1.05); box-shadow:0 8px 20px rgba(37,211,102,.35); }
-    .btn-whatsapp:disabled{ filter:grayscale(.2) opacity(.7); cursor:not-allowed; }
-  </style>
-</head>
-<body class="text-gray-800">
-  <header class="nav-grad text-white text-center text-3xl font-semibold py-2 rounded-b-lg shadow-md sticky top-0 z-10">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
-      <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold">Report Generator</h1>
-      <nav class="flex items-center gap-2">
-        <button id="btnNavTraining" class="btn-nav btn-grad text-sm">Training Report</button>
-        <button id="btnNavCancel" class="btn-nav btn-grad text-sm">Cancellation Report</button>
-        <!-- <a href="/admin.html" class="hidden sm:inline text-xs sm:text-sm underline/30 hover:underline ml-2">Admin</a> -->
-      </nav>
-    </div>
-  </header>
-
-  <main class="max-w-6xl mx-auto px-4 py-6">
-    <div class="grid grid-cols-1 lg:grid-cols-2 items-start gap-6">
-      <section id="sectionTraining" class="form-grad rounded-xl shadow p-4 sm:p-6">
-        <h2 class="text-lg font-semibold mb-4">Training Details</h2>
-        <form id="trainingForm" class="space-y-4">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium mb-1">Training Date<span class="text-red-500"> *</span></label>
-              <input type="date" id="trainingDate" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-              <p class="mt-1 text-xs text-red-600 hidden" id="errDate"></p>
-            </div>
-            <div>
-              <label class="block text-sm font-medium mb-1">Instructor Name<span class="text-red-500"> *</span></label>
-              <input type="text" id="instructor" placeholder="Enter instructor name" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-              <p class="mt-1 text-xs text-red-600 hidden" id="errInstructor"></p>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium mb-1">Batch Name<span class="text-red-500"> *</span></label>
-              <input type="text" id="batch" placeholder="e.g. CDEC-AWS-Batch-05" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-              <p class="mt-1 text-xs text-red-600 hidden" id="errBatch"></p>
-            </div>
-            <div>
-              <label class="block text-sm font-medium mb-1">Training Mode<span class="text-red-500"> *</span></label>
-              <select id="mode" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                <option value="">Select mode</option>
-                <option>Online</option>
-                <option>Offline</option>
-                <option>Hybrid</option>
-              </select>
-              <p class="mt-1 text-xs text-red-600 hidden" id="errMode"></p>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium mb-1">Present Students<span class="text-red-500"> *</span></label>
-              <input type="number" id="present" min="0" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-              <p class="mt-1 text-xs text-red-600 hidden" id="errPresent"></p>
-            </div>
-            <div>
-              <label class="block text-sm font-medium mb-1">Total Students<span class="text-red-500"> *</span></label>
-              <input type="number" id="total" min="1" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-              <p class="mt-1 text-xs text-red-600 hidden" id="errTotal"></p>
-              <p class="mt-1 text-xs text-gray-500">Present / Total = Attendance %</p>
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-1">Course<span class="text-red-500"> *</span></label>
-            <select id="course" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-              <option value="">Select course</option>
-            </select>
-            <p class="mt-1 text-xs text-red-600 hidden" id="errCourse"></p>
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-1">Subject (from syllabus)<span class="text-red-500"> *</span></label>
-            <select id="subject" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-              <option value="">Select subject</option>
-            </select>
-            <p class="mt-1 text-xs text-red-600 hidden" id="errSubject"></p>
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-1">Course Module / Day<span class="text-red-500"> *</span></label>
-            <select id="module" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" disabled required>
-              <option value="">Select module</option>
-            </select>
-            <p class="mt-1 text-xs text-red-600 hidden" id="errModule"></p>
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-2">Topics Covered<span class="text-red-500"> *</span></label>
-            <div id="topicsContainer" class="flex flex-col gap-2"></div>
-            <p class="mt-1 text-xs text-red-600 hidden" id="errTopics"></p>
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-1">Additional notes (optional)</label>
-            <textarea id="additionalNotes" rows="3" placeholder="Write any additional context or remarks..." class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-          </div>
-
-          <div class="flex items-center gap-3 pt-2">
-            <button id="btnGenerate" type="button" class="btn-grad">Generate Message</button>
-            <button id="btnReset" type="button" class="border border-gray-300 hover:bg-gray-50 text-gray-700 px-4 py-2 rounded-lg">Reset</button>
-          </div>
-        </form>
-      </section>
-
-      <section id="sectionCancel" class="form-grad rounded-xl shadow p-4 sm:p-6 hidden">
-        <h2 class="text-lg font-semibold mb-4">Batch Cancellation</h2>
-        <form id="cancelForm" class="space-y-4">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium mb-1">Date<span class="text-red-500"> *</span></label>
-              <input type="date" id="c_date" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" required>
-              <p class="mt-1 text-xs text-red-600 hidden" id="c_err_date"></p>
-            </div>
-            <div>
-              <label class="block text-sm font-medium mb-1">Instructor Name<span class="text-red-500"> *</span></label>
-              <input type="text" id="c_instructor" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Enter instructor name" required>
-              <p class="mt-1 text-xs text-red-600 hidden" id="c_err_instructor"></p>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium mb-1">Batch Name</label>
-              <input type="text" id="c_batch" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="e.g. CDEC-AWS-Batch-05">
-            </div>
-            <div>
-              <label class="block text-sm font-medium mb-1">Batch Time</label>
-              <input type="time" id="c_time" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium mb-1">Training Mode</label>
-              <select id="c_mode" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
-                <option value="">Select mode</option>
-                <option>Online</option>
-                <option>Offline</option>
-                <option>Hybrid</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-sm font-medium mb-1">Alternate Trainer (optional)</label>
-              <input type="text" id="c_alt" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="If alternate trainer available">
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-1">Cancellation Reason<span class="text-red-500"> *</span></label>
-            <textarea id="c_reason" rows="3" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="Describe the reason" required></textarea>
-            <p class="mt-1 text-xs text-red-600 hidden" id="c_err_reason"></p>
-          </div>
-
-          <div>
-            <label class="block text-sm font-medium mb-1">Number of affected batches (optional)</label>
-            <input type="number" id="c_count" min="0" class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" placeholder="e.g. 2">
-          </div>
-
-          <div id="c_affected" class="space-y-3"></div>
-
-          <div class="flex items-center gap-3 pt-2">
-            <button id="c_btnGenerate" type="button" class="btn-grad">Generate Message</button>
-            <button id="c_btnReset" type="button" class="border border-gray-300 hover:bg-gray-50 text-gray-700 px-4 py-2 rounded-lg">Reset</button>
-          </div>
-        </form>
-      </section>
-
-      <aside class="bg-white rounded-xl shadow p-4 sm:p-6 lg:sticky lg:top-20 h-fit">
-        <div class="flex items-center justify-between">
-          <div class="text-2xl font-medium">Generated Message</div>
-          <button id="btnCopy" class="btn-grad text-sm">Copy Message</button>
-        </div>
-
-        <div id="panelGenerated" class="mt-4">
-          <div id="preview" class="text-sm lg:text-base leading-snug bg-gray-50 p-3 lg:p-4 rounded-lg min-h-[180px] transition-opacity duration-300">Your formatted message will appear here...</div>
-        </div>
-
-        <div class="mt-6">
-          <button id="btnWhatsApp" disabled class="w-50 sm:w-auto btn-whatsapp mt-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-              <path fill="#fff" d="M19.11 17.32c-.3-.15-1.77-.87-2.05-.97c-.27-.1-.47-.15-.66.15c-.2.3-.76.97-.93 1.17c-.17.2-.34.22-.64.07c-.3-.15-1.25-.46-2.38-1.46c-.88-.78-1.47-1.74-1.64-2.04c-.17-.3 0-.46.13-.61c.13-.13.3-.34.44-.51c.15-.17.2-.3.3-.5c.1-.2.05-.37-.02-.51c-.07-.15-.66-1.59-.9-2.18c-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.51.07-.78.37c-.27.3-1.02 1-1.02 2.43c0 1.43 1.04 2.8 1.19 2.99c.15.2 2.05 3.13 4.97 4.39c.69.3 1.22.48 1.63.61c.68.22 1.29.19 1.77.12c.54-.08 1.77-.72 2.02-1.42c.25-.7.25-1.29.17-1.42c-.08-.13-.27-.2-.56-.34z"/>
-              <path fill="#fff" d="M27.1 4.9A13.94 13.94 0 0 0 16 1A14 14 0 0 0 2 15.99A13.85 13.85 0 0 0 4.06 24L2 31l7.18-1.88A14 14 0 1 0 27.1 4.9M16 28A12 12 0 1 1 28 16A12 12 0 0 1 16 28"/>
-            </svg>
-            <span>Send to WhatsApp</span>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Report Generator</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <style>
+      :root {
+        --brand: #1f2937;
+        --accent: #2563eb;
+        --muted: #6b7280;
+        --danger: #dc2626;
+      }
+      .btn-nav {
+        padding: 0.375rem 0.75rem;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 9999px;
+        transition: all 0.2s ease;
+      }
+      .btn-nav.active {
+        outline: 2px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+      .btn-grad {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.375rem;
+        background: linear-gradient(90deg, #f97316, #ec4899, #8b5cf6);
+        background-size: 200% 200%;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        padding: 0.375rem 0.75rem;
+        border-radius: 9999px;
+        transition: filter 0.2s ease, box-shadow 0.2s ease, background-position 0.6s ease;
+      }
+      .btn-grad:hover {
+        filter: brightness(1.05);
+        box-shadow: 0 8px 20px rgba(139, 92, 246, 0.35);
+        background-position: 100% 0;
+      }
+      .btn-cancel {
+        background: #1515ff;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
+      }
+      .btn-cancel:hover {
+        background: #6d28d9;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .nav-grad {
+        background: linear-gradient(90deg, #f97316, #ec4899, #8b5cf6);
+      }
+      .form-grad {
+        background: linear-gradient(90deg, #ffedd5, #e7e0ff);
+      }
+      .btn-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.375rem;
+        background: #25d366;
+        color: #fff;
+        padding: 0.25rem 1rem;
+        border-radius: 9999px;
+        transition: filter 0.2s ease, box-shadow 0.2s ease;
+      }
+      .btn-whatsapp:hover {
+        filter: brightness(1.05);
+        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+      }
+      .btn-whatsapp:disabled {
+        filter: grayscale(0.2) opacity(0.7);
+        cursor: not-allowed;
+      }
+      .btn-copy {
+        padding: 0.25rem 0.5rem;
+      }
+      @media (min-width: 640px) {
+        .btn-grad {
+          padding: 0.5rem 1rem;
+        }
+        .btn-copy {
+          padding: 0.5rem 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-gray-800">
+    <header
+      class="nav-grad text-white text-center text-3xl font-semibold py-2 rounded-b-lg shadow-md sticky top-0 z-10"
+    >
+      <div
+        class="max-w-6xl mx-auto px-2 py-2 sm:px-4 sm:py-4 flex items-center justify-between gap-2 sm:gap-4"
+      >
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold">
+          Report Generator
+        </h1>
+        <nav class="flex flex-wrap items-center gap-2">
+          <button id="btnNavTraining" class="btn-nav btn-grad text-xs sm:text-sm">
+            Training Report
           </button>
-        </div>
+          <button id="btnNavCancel" class="btn-nav btn-grad text-xs sm:text-sm">
+            Cancellation Report
+          </button>
+          <!-- <a href="/admin.html" class="hidden sm:inline text-xs sm:text-sm underline/30 hover:underline ml-2">Admin</a> -->
+        </nav>
+      </div>
+    </header>
 
-        <p class="mt-4 text-xs text-gray-500">Generated from dynamic syllabus.</p>
-        <p class="mt-1 text-[11px] text-gray-400">Configuration formats (Excel → JSON/YAML) may change with tool upgrades. Always refer to the official docs or your institute notes for latest column names.</p>
-      </aside>
-    </div>
-  </main>
+    <main class="max-w-6xl mx-auto px-4 py-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 items-start gap-6">
+        <section
+          id="sectionTraining"
+          class="form-grad rounded-xl shadow p-4 sm:p-6"
+        >
+          <h2 class="text-lg font-semibold mb-4">Training Details</h2>
+          <form id="trainingForm" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium mb-1"
+                  >Training Date<span class="text-red-500"> *</span></label
+                >
+                <input
+                  type="date"
+                  id="trainingDate"
+                  class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+                <p class="mt-1 text-xs text-red-600 hidden" id="errDate"></p>
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1"
+                  >Instructor Name<span class="text-red-500"> *</span></label
+                >
+                <input
+                  type="text"
+                  id="instructor"
+                  placeholder="Enter instructor name"
+                  class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+                <p
+                  class="mt-1 text-xs text-red-600 hidden"
+                  id="errInstructor"
+                ></p>
+              </div>
+            </div>
 
-  <script src="/app.js" type="module"></script>
-</body>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium mb-1"
+                  >Batch Name<span class="text-red-500"> *</span></label
+                >
+                <input
+                  type="text"
+                  id="batch"
+                  placeholder="e.g. CDEC-AWS-Batch-05"
+                  class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+                <p class="mt-1 text-xs text-red-600 hidden" id="errBatch"></p>
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1"
+                  >Training Mode<span class="text-red-500"> *</span></label
+                >
+                <select
+                  id="mode"
+                  class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                >
+                  <option value="">Select mode</option>
+                  <option>Online</option>
+                  <option>Offline</option>
+                  <option>Hybrid</option>
+                </select>
+                <p class="mt-1 text-xs text-red-600 hidden" id="errMode"></p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium mb-1"
+                  >Present Students<span class="text-red-500"> *</span></label
+                >
+                <input
+                  type="number"
+                  id="present"
+                  min="0"
+                  class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+                <p class="mt-1 text-xs text-red-600 hidden" id="errPresent"></p>
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1"
+                  >Total Students<span class="text-red-500"> *</span></label
+                >
+                <input
+                  type="number"
+                  id="total"
+                  min="1"
+                  class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+                <p class="mt-1 text-xs text-red-600 hidden" id="errTotal"></p>
+                <p class="mt-1 text-xs text-gray-500">
+                  Present / Total = Attendance %
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Course<span class="text-red-500"> *</span></label
+              >
+              <select
+                id="course"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              >
+                <option value="">Select course</option>
+              </select>
+              <p class="mt-1 text-xs text-red-600 hidden" id="errCourse"></p>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Subject (from syllabus)<span class="text-red-500">
+                  *</span
+                ></label
+              >
+              <select
+                id="subject"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              >
+                <option value="">Select subject</option>
+              </select>
+              <p class="mt-1 text-xs text-red-600 hidden" id="errSubject"></p>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Course Module / Day<span class="text-red-500"> *</span></label
+              >
+              <select
+                id="module"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                disabled
+                required
+              >
+                <option value="">Select module</option>
+              </select>
+              <p class="mt-1 text-xs text-red-600 hidden" id="errModule"></p>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-2"
+                >Topics Covered<span class="text-red-500"> *</span></label
+              >
+              <div id="topicsContainer" class="flex flex-col gap-2"></div>
+              <p class="mt-1 text-xs text-red-600 hidden" id="errTopics"></p>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Additional notes (optional)</label
+              >
+              <textarea
+                id="additionalNotes"
+                rows="3"
+                placeholder="Write any additional context or remarks..."
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              ></textarea>
+            </div>
+
+            <div class="flex items-center gap-3 pt-2">
+              <button id="btnGenerate" type="button" class="btn-grad">
+                Generate Message
+              </button>
+              <button
+                id="btnReset"
+                type="button"
+                class="border border-gray-300 hover:bg-gray-50 text-gray-700 px-4 py-2 rounded-lg"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section
+          id="sectionCancel"
+          class="form-grad rounded-xl shadow p-4 sm:p-6 hidden"
+        >
+          <h2 class="text-lg font-semibold mb-4">Batch Cancellation</h2>
+          <form id="cancelForm" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium mb-1"
+                  >Date<span class="text-red-500"> *</span></label
+                >
+                <input
+                  type="date"
+                  id="c_date"
+                  class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  required
+                />
+                <p class="mt-1 text-xs text-red-600 hidden" id="c_err_date"></p>
+              </div>
+              <div>
+                <label class="block text-sm font-medium mb-1"
+                  >Instructor Name<span class="text-red-500"> *</span></label
+                >
+                <input
+                  type="text"
+                  id="c_instructor"
+                  class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  placeholder="Enter instructor name"
+                  required
+                />
+                <p
+                  class="mt-1 text-xs text-red-600 hidden"
+                  id="c_err_instructor"
+                ></p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium mb-1"
+                  >Alternate Trainer (optional)</label
+                >
+                <input
+                  type="text"
+                  id="c_alt"
+                  class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  placeholder="If alternate trainer available"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Cancellation Reason<span class="text-red-500"> *</span></label
+              >
+              <textarea
+                id="c_reason"
+                rows="3"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                placeholder="Describe the reason"
+                required
+              ></textarea>
+              <p class="mt-1 text-xs text-red-600 hidden" id="c_err_reason"></p>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium mb-1"
+                >Number of affected batches (optional)</label
+              >
+              <input
+                type="number"
+                id="c_count"
+                min="0"
+                class="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                placeholder="e.g. 2"
+              />
+            </div>
+
+            <div id="c_affected" class="space-y-3"></div>
+
+            <div class="flex items-center gap-3 pt-2">
+              <button id="c_btnGenerate" type="button" class="btn-grad">
+                Generate Message
+              </button>
+              <button
+                id="c_btnReset"
+                type="button"
+                class="border border-gray-300 hover:bg-gray-50 text-gray-700 px-4 py-2 rounded-lg"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <aside
+          class="bg-white rounded-xl shadow p-4 sm:p-6 lg:sticky lg:top-20 h-fit"
+        >
+          <div class="flex items-center justify-between">
+            <div class="text-2xl font-medium">Generated Message</div>
+            <button id="btnCopy" class="btn-grad btn-copy text-xs sm:text-sm">Copy Message</button>
+          </div>
+
+          <div id="panelGenerated" class="mt-4">
+            <div
+              id="preview"
+              class="text-sm lg:text-base leading-snug bg-gray-50 p-3 lg:p-4 rounded-lg min-h-[180px] transition-opacity duration-300"
+            >
+              Your formatted message will appear here...
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <button
+              id="btnWhatsApp"
+              disabled
+              class="w-50 sm:w-auto btn-whatsapp mt-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  fill="#ffffff"
+                  d="M27.1 4.9A13.94 13.94 0 0 0 16 1A14 14 0 0 0 2 15.99A13.85 13.85 0 0 0 4.06 24L2 31l7.18-1.88A14 14 0 1 0 27.1 4.9M16 28A12 12 0 1 1 28 16A12 12 0 0 1 16 28"
+                />
+                <path
+                  fill="#ffffff"
+                  d="M20.6 18.2c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.17-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.46-.88-.78-1.47-1.74-1.64-2.04-.17-.3 0-.46.13-.61.13-.13.3-.34.44-.51.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.51-.07-.15-.66-1.59-.9-2.18-.24-.58-.48-.5-.66-.5h-.56c-.2 0-.51.07-.78.37-.27.3-1.02 1-1.02 2.43 0 1.43 1.04 2.8 1.19 2.99.15.2 2.05 3.13 4.97 4.39.69.3 1.22.48 1.63.61.68.22 1.29.19 1.77.12.54-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.08-.13-.27-.2-.56-.34z"
+                />
+              </svg>
+
+              <span>Send to WhatsApp</span>
+            </button>
+          </div>
+
+          <p class="mt-4 text-xs text-gray-500">
+            Generated from dynamic syllabus.
+          </p>
+          <p class="mt-1 text-[11px] text-gray-400">
+            Configuration formats (Excel → JSON/YAML) may change with tool
+            upgrades. Always refer to the official docs or your institute notes
+            for latest column names.
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <script src="/app.js" type="module"></script>
+  </body>
 </html>
