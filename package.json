@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "node server/index.js",
-    "build": "npm run build:css",
-    "build:css": "tailwindcss -i ./src/styles.css -o ./public/assets/styles.css --minify --content ./public/**/*.{html,js}"
+  "start": "node server/index.js",
+  "dev": "node server/index.js",
+  "build": "echo \"no build needed\"",
+  "build:css": "echo \"no css build needed; styles are prebuilt in public/assets/styles.css\""
   },
   "dependencies": {
     "cors": "^2.8.5",
