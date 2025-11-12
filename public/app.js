@@ -275,13 +275,23 @@ async function loadSyllabus(slug) {
 
 async function loadCourses() {
   try {
-    const res = await fetch('/api/courses');
+    const baseUrl = window.location.origin;
+    const res = await fetch(`${baseUrl}/api/courses`);
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
     courses = await res.json();
     populateCourses();
   } catch (e) {
     console.error('Failed to fetch courses', e);
-    courses = [];
-    populateCourses();
+    // Fallback to relative path if absolute URL fails
+    try {
+      const res = await fetch('/api/courses');
+      courses = await res.json();
+      populateCourses();
+    } catch (e2) {
+      console.error('Fallback fetch failed', e2);
+      courses = [];
+      populateCourses();
+    }
   }
 }
 
